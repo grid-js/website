@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Head from '@docusaurus/Head';
 import ThemeProvider from '@theme/ThemeProvider';
 import TabGroupChoiceProvider from '@theme/TabGroupChoiceProvider';
@@ -71,6 +71,8 @@ function Feature({icon, title, description}) {
 }
 
 function Header() {
+  const [isMenuOpen, setMenuState] = useState(false);
+
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-0">
@@ -95,6 +97,7 @@ function Header() {
               </a>
               <div className="-mr-2 flex items-center md:hidden">
                 <button type="button"
+                        onClick={() => setMenuState(true)}
                         className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                   <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -125,7 +128,7 @@ function Header() {
           </div>
         </nav>
 
-        <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div className={`absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden ${!isMenuOpen ? 'hidden' : ''}`}>
           <div className="rounded-lg shadow-md">
             <div className="rounded-lg bg-white shadow-xs overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
@@ -134,6 +137,7 @@ function Header() {
                 </div>
                 <div className="-mr-2">
                   <button type="button"
+                          onClick={() => setMenuState(false)}
                           className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
@@ -166,7 +170,7 @@ function Header() {
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1
                 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-5xl lg:text-4xl xl:text-5xl">
-                Grid.js
+                Grid.js&nbsp;
                 <br className="hidden md:inline"/>
                 <span className="text-blue-600">
                   Advanced Table Plugin
@@ -176,17 +180,24 @@ function Header() {
                 Grid.js is a Free and open-source HTML table plugin written in TypeScript. It works with most JavaScript
                 frameworks, including <b>React</b>, <b>Angular.js</b>, <b>Vue</b> and <b>VanillaJs</b>.
               </p>
-              <div className="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <a href="/download" className="mt-3 w-full px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-700 focus:outline-none focus:shadow-outline active:bg-gray-900 transition duration-150 ease-in-out sm:mt-0 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
-                  Download
-                </a>
-                <a href="/docs" className="mt-3 w-full px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-700 focus:outline-none focus:shadow-outline active:bg-gray-900 transition duration-150 ease-in-out sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
-                  Examples
-                </a>
-                <p className="mt-3 text-sm leading-5 text-gray-500">
-                  Grid.js is published under <a href="#" className="font-medium text-gray-900 underline">MIT</a> license.
-                </p>
+
+              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div className="rounded-md shadow">
+                  <a href="#"
+                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                    Get started
+                  </a>
+                </div>
+                <div className="mt-3 sm:mt-0 sm:ml-3">
+                  <a href="#"
+                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                    Examples
+                  </a>
+                </div>
               </div>
+
+
+
             </div>
             <div
               className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
