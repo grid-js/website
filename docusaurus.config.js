@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   title: 'Grid.js',
-  tagline: 'The tagline of my site',
+  tagline: 'Advanced table plugin',
   url: 'https://gridjs.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
