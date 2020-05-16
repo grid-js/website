@@ -1,9 +1,12 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Head from '@docusaurus/Head';
 import ThemeProvider from '@theme/ThemeProvider';
 import TabGroupChoiceProvider from '@theme/TabGroupChoiceProvider';
 import AnnouncementBar from '@theme/AnnouncementBar';
 import Link from '@docusaurus/Link';
+import faker from "faker";
+import { Grid } from "gridjs";
+import "gridjs/dist/theme/mermaid.css";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 // do NOT remove the CSS import even if unused
@@ -54,6 +57,22 @@ const features = [
   },
 ];
 
+const generateData = () => {
+  const limit = 15;
+  const data = [];
+  for (let i = 0; i < limit; i++) {
+    const country = faker.address.country();
+
+    data.push([
+      faker.name.firstName(),
+      faker.name.jobArea(),
+      country.length > 9 ? `${country.slice(0, 9)}...` : `${country}`
+    ]);
+  }
+
+  return data;
+};
+
 function Feature({icon, title, description}) {
   return (
     <div className="mt-10 lg:mt-0">
@@ -72,6 +91,19 @@ function Feature({icon, title, description}) {
 
 function Header() {
   const [isMenuOpen, setMenuState] = useState(false);
+  const gridRef = useRef(null);
+
+  useEffect(() => {
+    new Grid({
+      data: generateData(),
+      columns: ['Name', 'Job', 'Location'],
+      pagination: {
+        enabled: true,
+        summary: false,
+        limit: 5
+      }
+    }).render(gridRef.current)
+  })
 
   return (
     <div className="relative bg-white overflow-hidden">
@@ -195,9 +227,6 @@ function Header() {
                   </a>
                 </div>
               </div>
-
-
-
             </div>
             <div
               className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -213,20 +242,8 @@ function Header() {
                 <rect y="72" width="640" height="640" className="text-gray-50" fill="currentColor"/>
                 <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"/>
               </svg>
-              <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                <button
-                  className="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
-                  <img className="w-full"
-                       src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                       alt="Woman making a sale"/>
-                  <div className="absolute inset-0 w-full h-full flex items-center justify-center">
-                    <svg className="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
-                      <circle opacity="0.9" cx="42" cy="42" r="42" fill="white"/>
-                      <path
-                        d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"/>
-                    </svg>
-                  </div>
-                </button>
+              <div className="relative mx-auto w-full rounded-lg lg:max-w-md">
+                <div ref={gridRef} />
               </div>
             </div>
           </div>
@@ -361,6 +378,7 @@ function Footer() {
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
+
   return (
     <ThemeProvider>
       <TabGroupChoiceProvider>
