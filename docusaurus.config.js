@@ -6,8 +6,8 @@ module.exports = {
   url: 'https://gridjs.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'grid-js', // Usually your GitHub org/user name.
-  projectName: 'gridjs', // Usually your repo name.
+  organizationName: 'grid-js',
+  projectName: 'website',
   themeConfig: {
     navbar: {
       hideOnScroll: true,
