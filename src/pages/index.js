@@ -62,10 +62,11 @@ const generateData = () => {
   const data = [];
   for (let i = 0; i < limit; i++) {
     const country = faker.address.country();
+    const job =faker.name.jobArea();
 
     data.push([
       faker.name.firstName(),
-      faker.name.jobArea(),
+      job.length > 9 ? `${job.slice(0, 9)}...` : `${job}`,
       country.length > 9 ? `${country.slice(0, 9)}...` : `${country}`
     ]);
   }
@@ -94,16 +95,31 @@ function Header() {
   const gridRef = useRef(null);
 
   useEffect(() => {
+    if (gridRef.current.childNodes.length > 0) return;
+
     new Grid({
       data: generateData(),
-      columns: ['Name', 'Job', 'Location'],
+      columns: [
+        {
+          name: 'Name',
+          sort: true
+        },
+        {
+          name: 'Job',
+          sort: true
+        },
+        {
+          name: 'Country',
+          sort: true
+        }
+      ],
       pagination: {
         enabled: true,
         summary: false,
         limit: 5
       }
-    }).render(gridRef.current)
-  })
+    }).render(gridRef.current);
+  });
 
   return (
     <div className="relative bg-white overflow-hidden">
