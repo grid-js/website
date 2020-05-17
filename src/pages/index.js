@@ -393,15 +393,13 @@ function Footer() {
 }
 
 function Install() {
-  const example = `new Gridjs(
-  { 
-    columns: ['Name', 'Phone Number', 'Email'],
-    data: [
-      ['John', '(01) 889-3123', 'john@example.com'],
-      ['Mike', '(353) 78-213-100', 'mike@gmail.com']
-    ] 
-  }
-).render(document.getElementById('#table'))`;
+  const example = `new Gridjs({ 
+  columns: ['Name', 'Email'],
+  data: [
+    ['John', 'john@example.com'],
+    ['Mike', 'mike@gmail.com']
+  ] 
+}).render(document.getElementById('table'));`;
 
   return (
     <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
@@ -420,7 +418,7 @@ function Install() {
             <h3 className="mt-4 text-xl leading-7 font-semibold text-gray-900">
               <span className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-blue-100 text-blue-600">
                 1
-              </span> Include the JavaScript and CSS files
+              </span> Include the JavaScript and CSS
             </h3>
             <p className="mt-3 text-base leading-6 text-gray-500">
               Grid.js is available on <a href="https://www.npmjs.com/package/gridjs" target="_blank">NPM</a> and most CDNs
@@ -456,7 +454,9 @@ function Install() {
               The <code>render()</code> method binds and renders a Grid.js instance
             </p>
 
-            <CodeBlock className="js">{example}</CodeBlock>
+            <div className={style.codeExample}>
+              <CodeBlock className="js" id="codeExample">{example}</CodeBlock>
+            </div>
           </div>
         </div>
       </div>

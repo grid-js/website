@@ -2,3 +2,10 @@
 a:hover {
   text-decoration: none !important;
 }
+
+@media (max-width: 485px) {
+    .codeExample {
+        overflow: scroll;
+        max-width: 342px
+    }
+}
