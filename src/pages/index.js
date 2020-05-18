@@ -91,6 +91,20 @@ function Feature({icon, title, description}) {
   );
 }
 
+function Features() {
+  return (<div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div className="py-12 bg-white">
+      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
+        <div className="lg:grid lg:grid-cols-3 lg:gap-8">
+          {features.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>);
+}
+
 function Header() {
   const [isMenuOpen, setMenuState] = useState(false);
   const gridRef = useRef(null);
@@ -468,45 +482,37 @@ function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
 
+  useEffect(() => {
+    // sorry, I couldn't find a better way to disable the dark mode for this page only
+    document.documentElement.setAttribute('data-theme', '');
+  });
+
   return (
-    <ThemeProvider>
-      <TabGroupChoiceProvider>
-        <Head>
-          <html lang="en" />
-          <title>{siteConfig.title} - {siteConfig.tagline}</title>
-          <meta property="og:title" content="Grid.js" />
-          <link rel="shortcut icon" href="" />
-          <meta name="description" content="description" />
-          <meta property="og:description" content="description" />
-          <meta name="keywords" content="grid, gridjs, grid.js" />
-          <meta property="og:image" content="" />
-          <meta property="twitter:image" content="" />
-          <meta name="twitter:image:alt" content="" />
-          <meta property="og:url" content="https://gridjs.io/" />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Head>
-        <AnnouncementBar />
+    <ThemeProvider isDarkTheme={false}>
+      <Head>
+        <html lang="en" />
+        <title>{siteConfig.title} - {siteConfig.tagline}</title>
+        <meta property="og:title" content="Grid.js" />
+        <link rel="shortcut icon" href="" />
+        <meta name="description" content="description" />
+        <meta property="og:description" content="description" />
+        <meta name="keywords" content="grid, gridjs, grid.js" />
+        <meta property="og:image" content="" />
+        <meta property="twitter:image" content="" />
+        <meta name="twitter:image:alt" content="" />
+        <meta property="og:url" content="https://gridjs.io/" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+      <AnnouncementBar />
 
-        <Header />
+      <Header />
 
-        <Install />
+      <Install />
 
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div className="py-12 bg-white">
-            <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
-              <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </div>
+      <Features />
 
-        </div>
-
-          <Footer />
-        </TabGroupChoiceProvider>
-      </ThemeProvider>
+      <Footer />
+    </ThemeProvider>
   );
 }
 
