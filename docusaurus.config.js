@@ -88,12 +88,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/grid-js/gridjs-website/edit/master/',
+            'https://github.com/grid-js/website/edit/master/',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/grid-js/gridjs-website/edit/master/blog/',
+            'https://github.com/grid-js/website/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
