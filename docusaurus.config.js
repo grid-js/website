@@ -101,6 +101,7 @@ module.exports = {
       },
     ],
   ],
+  themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
     path.resolve(__dirname, './plugins/tailwind')
   ]
