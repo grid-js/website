@@ -3,7 +3,7 @@ id: from
 title: From HTML Table 
 ---
 
-To load the data from an existing HTML table:
+In this examples, we load the data from an existing HTML table
 
 import { Grid } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
@@ -11,22 +11,35 @@ import { useEffect } from "react";
 
 <CodeBlock children={
 `
-const grid = new Grid({
-  data: [[1, 2, 3], [4, 5, 6]]
-});
-`
-}
- transformCode={(code) => 
-`
 function () {
-  ${code}
-  
   useEffect(() => {
-    grid.render(document.getElementById('wrapper'));
+    const grid = new Grid({
+      from: document.getElementById('myTable')
+    }).render(document.getElementById('wrapper'));
   });
   
   return (
-    <div id="wrapper" />
+    <>
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>mike@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="wrapper" />
+    </>
   );
 }
 `

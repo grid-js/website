@@ -252,7 +252,7 @@ function Header() {
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a href="#"
+                  <a href="/docs/examples/hello-world"
                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                     Examples
                   </a>
@@ -302,7 +302,7 @@ function Footer() {
                     </a>
                   </li>
                   <li className="mt-4">
-                    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
+                    <a href="/docs/examples/hello-world" className="text-base leading-6 text-gray-300 hover:text-white">
                       Examples
                     </a>
                   </li>
