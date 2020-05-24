@@ -1,6 +1,6 @@
 module.exports = {
   sidebar: {
-    "Getting Started": ['index', 'philosophy'],
+    "Getting Started": ['index', 'philosophy', 'community'],
     Usage: ['index'],
     Examples: [
       'examples/hello-world',

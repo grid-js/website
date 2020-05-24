@@ -41,12 +41,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'Getting Started',
+              to: 'docs/index',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'Examples',
+              to: 'docs/examples/hello-world',
             },
           ],
         },
@@ -59,7 +59,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/K55BwDY',
             },
             {
               label: 'Twitter',

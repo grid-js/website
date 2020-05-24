@@ -171,18 +171,18 @@ function Header() {
             <div className="hidden md:block md:ml-10">
               <a href="#"
                  className="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Download</a>
-              <a href="#"
+              <a href="/docs/index"
                  className="ml-10 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Documentation</a>
-              <a href="#"
+              <a href="/docs/community"
                  className="ml-10 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Community</a>
-              <a href="#"
+              <a href="https://github.com/grid-js/gridjs"
                  className="ml-10 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">GitHub</a>
             </div>
           </div>
           <div className="hidden md:block text-right">
           <span className="inline-flex rounded-md shadow-md">
             <span className="inline-flex rounded-md shadow-xs">
-              <a href="#"
+              <a href="https://discord.com/invite/K55BwDY"
                  className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                 Chat
               </a>
@@ -211,15 +211,15 @@ function Header() {
               <div className="px-2 pt-2 pb-3">
                 <a href="#"
                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Download</a>
-                <a href="#"
+                <a href="/docs/index"
                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Documentation</a>
-                <a href="#"
+                <a href="/docs/community"
                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Community</a>
-                <a href="#"
+                <a href="https://github.com/grid-js/gridjs"
                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">GitHub</a>
               </div>
               <div>
-                <a href="#"
+                <a href="https://discord.com/invite/K55BwDY"
                    className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">
                   Chat
                 </a>
@@ -319,17 +319,17 @@ function Footer() {
                 </h4>
                 <ul className="mt-4">
                   <li>
-                    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
+                    <a href="/docs/index" className="text-base leading-6 text-gray-300 hover:text-white">
                       Documentation
                     </a>
                   </li>
                   <li className="mt-4">
-                    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
+                    <a href="/docs/community" className="text-base leading-6 text-gray-300 hover:text-white">
                       Community
                     </a>
                   </li>
                   <li className="mt-4">
-                    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
+                    <a href="https://discord.com/invite/K55BwDY" className="text-base leading-6 text-gray-300 hover:text-white">
                       Chat
                     </a>
                   </li>
@@ -358,7 +358,7 @@ function Footer() {
                     </a>
                   </li>
                   <li className="mt-4">
-                    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
+                    <a href="https://github.com/grid-js/gridjs" className="text-base leading-6 text-gray-300 hover:text-white">
                       GitHub
                     </a>
                   </li>
@@ -381,14 +381,14 @@ function Footer() {
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex md:order-2">
-            <a href="#" className="ml-6 text-gray-400 hover:text-gray-300">
+            <a href="https://twitter.com/grid_js" className="ml-6 text-gray-400 hover:text-gray-300">
               <span className="sr-only">Twitter</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
               </svg>
             </a>
-            <a href="#" className="ml-6 text-gray-400 hover:text-gray-300">
+            <a href="https://github.com/grid-js/gridjs" className="ml-6 text-gray-400 hover:text-gray-300">
               <span className="sr-only">GitHub</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path fillRule="evenodd"
