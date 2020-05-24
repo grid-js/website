@@ -9,6 +9,9 @@ module.exports = {
   organizationName: 'grid-js',
   projectName: 'website',
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'UA-167499954-1',
+    },
     navbar: {
       hideOnScroll: true,
       title: 'Grid.js',
@@ -85,6 +88,11 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        sitemap: {
+          cacheTime: 600 * 1000,
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
