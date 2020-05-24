@@ -4,6 +4,7 @@ module.exports = {
     Features: ['mdx'],
     Examples: [
       'examples/hello-world',
+      'examples/pagination',
       'examples/from'
     ]
   },
