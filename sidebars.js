@@ -1,7 +1,7 @@
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+  sidebar: {
+    "Getting Started": ['index', 'philosophy', 'doc3'],
+    Usage: ['mdx'],
     Examples: [
       'examples/hello-world',
       'examples/pagination',
