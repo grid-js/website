@@ -370,7 +370,7 @@ function Footer() {
                 </h4>
                 <ul className="mt-4">
                   <li>
-                    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
+                    <a href="/docs/license" className="text-base leading-6 text-gray-300 hover:text-white">
                       License
                     </a>
                   </li>

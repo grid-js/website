@@ -3,6 +3,16 @@ id: download
 title: Download
 ---
 
+Grid.js comes in two formats, **UMD** and **ES module** and also in **production** and **development**:
+
+ - gridjs.development.es5.js
+ - gridjs.development.js
+ - gridjs.production.es5.min.js
+ - gridjs.production.min.js
+ - theme/
+
+Explore the project output on [https://unpkg.com/browse/gridjs/dist/](https://unpkg.com/browse/gridjs/dist/).
+
 ## NPM
 
 Grid.js is available as [`gridjs`](https://www.npmjs.com/package/gridjs) on NPM. To install the package:
