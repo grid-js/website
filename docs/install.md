@@ -1,6 +1,6 @@
 ---
-id: download
-title: Download
+id: install
+title: Install
 ---
 
 Grid.js comes in two formats, **UMD** and **ES module** and also in **production** and **development**:
@@ -21,7 +21,14 @@ Grid.js is available as [`gridjs`](https://www.npmjs.com/package/gridjs) on NPM.
 npm install gridjs --save
 ```
 
-Above command will install all the dependencies as well.
+Above command will install all the dependencies as well. Then include both JavaScript and CSS files:
+
+```js
+import { Grid } from "gridjs";
+import "gridjs/dist/theme/mermaid.css";
+```
+
+
 
 ## CDN
 
@@ -34,7 +41,7 @@ You can download Grid.js from [unpkg.com/browse/gridjs/dist](https://unpkg.com/b
 Add both JavaScript and css files:
 
 ```html title="gridjs.production.min.js"
-<script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js" />
+<script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
 ```
 
 ```html title="theme/mermaid.min.css"
@@ -46,9 +53,11 @@ Add both JavaScript and css files:
 Grid.js is available on [jsdelivr.com/package/npm/gridjs](https://www.jsdelivr.com/package/npm/gridjs).
 
 ```html title="gridjs.production.min.js"
-<script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.production.min.js" />
+<script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.production.min.js"></script>
 ```
 
 ```html title="theme/mermaid.min.css"
 <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 ```
+
+Visit the [Install](./install.md) page for more details.

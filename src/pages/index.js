@@ -169,8 +169,8 @@ function Header() {
               </div>
             </div>
             <div className="hidden md:block md:ml-10">
-              <a href="/docs/download"
-                 className="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Download</a>
+              <a href="/docs/install"
+                 className="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Install</a>
               <a href="/docs/index"
                  className="ml-10 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Documentation</a>
               <a href="/docs/community"
@@ -209,8 +209,8 @@ function Header() {
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3">
-                <a href="/docs/download"
-                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Download</a>
+                <a href="/docs/install"
+                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Install</a>
                 <a href="/docs/index"
                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Documentation</a>
                 <a href="/docs/community"
@@ -297,8 +297,8 @@ function Footer() {
                 </h4>
                 <ul className="mt-4">
                   <li>
-                    <a href="/docs/download" className="text-base leading-6 text-gray-300 hover:text-white">
-                      Download
+                    <a href="/docs/install" className="text-base leading-6 text-gray-300 hover:text-white">
+                      Install
                     </a>
                   </li>
                   <li className="mt-4">
