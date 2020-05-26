@@ -435,7 +435,7 @@ function Install() {
               </span> Include the JavaScript and CSS
             </h3>
             <p className="mt-3 text-base leading-6 text-gray-500">
-              Grid.js is available on <a href="https://www.npmjs.com/package/gridjs" target="_blank">NPM</a> and most CDNs
+              Grid.js is available on <a rel="noreferrer" href="https://www.npmjs.com/package/gridjs" target="_blank">NPM</a> and most CDNs
             </p>
 
             <div className="mt-1 flex rounded-md shadow-sm">
