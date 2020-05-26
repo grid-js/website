@@ -493,10 +493,10 @@ function Home() {
         <html lang="en" />
         <title>{siteConfig.title} - {siteConfig.tagline}</title>
         <meta property="og:title" content="Grid.js" />
-        <link rel="shortcut icon" href="" />
-        <meta name="description" content="description" />
-        <meta property="og:description" content="description" />
-        <meta name="keywords" content="grid, gridjs, grid.js" />
+        <link rel="shortcut icon" href="/img/favicon.ico" />
+        <meta name="description" content="Grid.js - Advanced table plugin" />
+        <meta property="og:description" content="Grid.js - Advanced table plugin" />
+        <meta name="keywords" content="grid, gridjs, grid.js, javascript, typescript, react, table, html, npm, node, angular, vue" />
         <meta property="og:image" content="" />
         <meta property="twitter:image" content="" />
         <meta name="twitter:image:alt" content="" />
