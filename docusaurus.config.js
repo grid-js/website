@@ -22,11 +22,22 @@ module.exports = {
       links: [
         {
           to: 'docs/index',
-          activeBasePath: 'docs',
+          activeBasePath: 'docs/index',
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'docs/examples/hello-world',
+          activeBasePath: 'docs/examples',
+          label: 'Examples',
+          position: 'left'
+        },
+        {
+          to: 'docs/community', label: 'Community', position: 'left'
+        },
+        {
+          to: 'blog', label: 'Blog', position: 'left'
+        },
         {
           href: 'https://github.com/grid-js/gridjs',
           label: 'GitHub',
