@@ -9,6 +9,7 @@ module.exports = {
       'examples/hello-world',
       'examples/pagination',
       'examples/search',
+      'examples/sorting',
       'examples/from'
     ]
   },
