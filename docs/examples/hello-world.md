@@ -7,6 +7,10 @@ import { Grid } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
 import { useEffect } from "react";
 
+:::tip
+You can interact with the following editor!
+:::
+
 <CodeBlock children={
 `
 const grid = new Grid({

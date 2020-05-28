@@ -3,7 +3,8 @@ module.exports = {
     Introduction: ['index', 'philosophy', 'community', 'license'],
     Usage: [
       'install',
-      'hello-world'
+      'hello-world',
+      'config'
     ],
     Examples: [
       'examples/hello-world',

@@ -95,6 +95,8 @@ module.exports = {
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           editUrl:
             'https://github.com/grid-js/website/edit/master/',
         },
