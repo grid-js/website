@@ -13,7 +13,11 @@ Grid.js comes in two formats, **UMD** and **ES module** and also in **production
 
 Explore the project output on [https://unpkg.com/browse/gridjs/dist/](https://unpkg.com/browse/gridjs/dist/).
 
-## NPM
+:::tip
+You can either install Grid.js using NPM or directly include the JavaScript and CSS files from a CDN
+:::
+
+## Node.js
 
 Grid.js is available as [`gridjs`](https://www.npmjs.com/package/gridjs) on NPM. To install the package:
 
@@ -28,9 +32,7 @@ import { Grid } from "gridjs";
 import "gridjs/dist/theme/mermaid.css";
 ```
 
-
-
-## CDN
+## Browser
 
 Grid.js is also available on following CDNs and can be used directly.
 
