@@ -15,8 +15,8 @@ you can use to see the effect config properties live.
 To define the rows and columns of the table.
 
  - `optional` (either `data` or `from` must be provided)
- - Type: `T[][]`
- - Example: [Hello World](./examples/hello-world.md)
+ - Type: `T[][]` or `Function`
+ - Example: [Hello World](./examples/hello-world.md), [Async import](./examples/import-async.md) and [Dynamic import](./examples/import-function.md)
 
 ```js
 new Grid({

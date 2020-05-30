@@ -8,10 +8,13 @@ module.exports = {
     ],
     Examples: [
       'examples/hello-world',
+      'examples/import-function',
+      'examples/import-async',
+      'examples/from',
       'examples/pagination',
       'examples/search',
       'examples/sorting',
-      'examples/from'
+      'examples/loading-state',
     ]
   },
 };
