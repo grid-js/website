@@ -500,12 +500,14 @@ function Home() {
         <meta name="keywords" content="grid, gridjs, grid.js, javascript, typescript, react, table, html, npm, node, angular, vue, typescript" />
         <meta property="og:image" content="https://gridjs.io/img/social.png" />
         <meta property="og:url" content="https://gridjs.io/" />
-        <meta property="twitter:image" content="https://gridjs.io/img/social.png" />
+        <meta name="twitter:image" content="https://gridjs.io/img/social.png" />
         <meta name="twitter:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
         <meta name="twitter:image:alt" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
         <meta name="twitter:description" content="Grid.js is a lightweight, advanced table plugin that works everywhere" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@grid_js" />
+        <meta name="twitter:creator" content="@afshinmeh" />
+
       </Head>
       <AnnouncementBar />
 
