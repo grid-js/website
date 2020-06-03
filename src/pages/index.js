@@ -492,16 +492,20 @@ function Home() {
       <Head>
         <html lang="en" />
         <title>{siteConfig.title} - {siteConfig.tagline}</title>
-        <meta property="og:title" content="Grid.js" />
+        <meta property="og:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
         <link rel="shortcut icon" href="/img/favicon.ico" />
-        <meta name="description" content="Grid.js - Advanced table plugin" />
-        <meta property="og:description" content="Grid.js - Advanced table plugin" />
-        <meta name="keywords" content="grid, gridjs, grid.js, javascript, typescript, react, table, html, npm, node, angular, vue" />
+        <meta name="author" content="Afshin Mehrabani" />
+        <meta name="description" content="Grid.js is a lightweight, advanced table plugin that works everywhere" />
+        <meta property="og:description" content="Grid.js is a lightweight, advanced table plugin that works everywhere" />
+        <meta name="keywords" content="grid, gridjs, grid.js, javascript, typescript, react, table, html, npm, node, angular, vue, typescript" />
         <meta property="og:image" content="https://gridjs.io/img/social.png" />
-        <meta property="twitter:image" content="https://gridjs.io/img/social.png" />
-        <meta name="twitter:image:alt" content="Grid.js" />
         <meta property="og:url" content="https://gridjs.io/" />
+        <meta property="twitter:image" content="https://gridjs.io/img/social.png" />
+        <meta name="twitter:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
+        <meta name="twitter:image:alt" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
+        <meta name="twitter:description" content="Grid.js is a lightweight, advanced table plugin that works everywhere" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@grid_js" />
       </Head>
       <AnnouncementBar />
 
