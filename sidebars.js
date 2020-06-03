@@ -11,6 +11,7 @@ module.exports = {
       'examples/import-function',
       'examples/import-async',
       'examples/from',
+      'examples/server',
       'examples/pagination',
       'examples/search',
       'examples/sorting',

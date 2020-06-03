@@ -14,7 +14,7 @@ you can use to see the effect config properties live.
 
 To define the rows and columns of the table.
 
- - `optional` (either `data` or `from` must be provided)
+ - `optional` (either `data`, `from` or `server` must be provided)
  - Type: `T[][]` or `Function`
  - Example: [Hello World](./examples/hello-world.md), [Async import](./examples/import-async.md) and [Dynamic import](./examples/import-function.md)
 
@@ -33,9 +33,20 @@ new Grid({
 
 To parse and populate data from an existing HTML table
 
- - `optinoal` (either `data` or `from` must be provided)
+ - `optional` (either `data`, `from` or `server` must be provided)
  - Type: `HTMLElement`
  - Example: [From HTML table](./examples/from.md)
+ 
+## `server`
+
+To load and import data from a remote URL. Server storage uses `fetch` API to send the call and fetch the data.
+
+ - `optional` (either `data` or `from` must be provided)
+ - Type: `object` which has the following keys:
+   - url: `string`
+   - then: `Function` `optional`
+   - opts: `array` `optional`
+ - Example: [Server](./examples/server.md)
 
 ## `columns`
 

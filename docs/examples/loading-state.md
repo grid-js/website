@@ -42,7 +42,9 @@ function () {
   );
 }
 `
-} live={true} scope={{ Grid, CodeBlock, useEffect }} />
+} live={true} scope={{ Grid, CodeBlock, useEffect }} />  
+
+<br/>
 
 :::note
 Other operations like searching and sorting happens immediately because the data has already been imported and cached

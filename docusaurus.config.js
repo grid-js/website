@@ -39,6 +39,11 @@ module.exports = {
           to: 'blog', label: 'Blog', position: 'left'
         },
         {
+          href: 'https://www.npmjs.com/package/gridjs',
+          label: 'NPM',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/grid-js/gridjs',
           label: 'GitHub',
           position: 'right',
