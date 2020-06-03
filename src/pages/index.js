@@ -500,6 +500,7 @@ function Home() {
         <meta name="keywords" content="grid, gridjs, grid.js, javascript, typescript, react, table, html, npm, node, angular, vue, typescript" />
         <meta property="og:image" content="https://gridjs.io/img/social.png" />
         <meta property="og:url" content="https://gridjs.io/" />
+        <meta property="og:type" content="website" />
         <meta name="twitter:image" content="https://gridjs.io/img/social.png" />
         <meta name="twitter:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
         <meta name="twitter:image:alt" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
