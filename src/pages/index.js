@@ -497,9 +497,9 @@ function Home() {
         <meta name="description" content="Grid.js - Advanced table plugin" />
         <meta property="og:description" content="Grid.js - Advanced table plugin" />
         <meta name="keywords" content="grid, gridjs, grid.js, javascript, typescript, react, table, html, npm, node, angular, vue" />
-        <meta property="og:image" content="" />
-        <meta property="twitter:image" content="" />
-        <meta name="twitter:image:alt" content="" />
+        <meta property="og:image" content="https://gridjs.io/img/social.png" />
+        <meta property="twitter:image" content="https://gridjs.io/img/social.png" />
+        <meta name="twitter:image:alt" content="Grid.js" />
         <meta property="og:url" content="https://gridjs.io/" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
