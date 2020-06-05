@@ -9,6 +9,11 @@ module.exports = {
   organizationName: 'grid-js',
   projectName: 'website',
   themeConfig: {
+    algolia: {
+    apiKey: '15086b8795378f5116d77008d1c3ebf0',
+    indexName: 'gridjs',
+    algoliaOptions: {} // Optional, if provided by Algolia
+    },
     googleAnalytics: {
       trackingID: 'UA-167499954-1',
     },
