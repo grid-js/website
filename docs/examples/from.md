@@ -46,5 +46,5 @@ function () {
   );
 }
 `
-} live={true} scope={{ Grid, CodeBlock, useEffect }} />
+} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
 

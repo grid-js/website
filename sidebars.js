@@ -16,6 +16,7 @@ module.exports = {
       'examples/search',
       'examples/sorting',
       'examples/loading-state',
+      'examples/wide-table',
     ]
   },
 };

@@ -1,6 +1,6 @@
 ---
 id: server
-title: Server
+title: Server Side
 ---
 
 import { Grid } from "gridjs";

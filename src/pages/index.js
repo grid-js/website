@@ -114,6 +114,7 @@ function Header() {
 
     new Grid({
       data: generateData(),
+      autoWidth: false,
       columns: [
         {
           name: 'Name',
