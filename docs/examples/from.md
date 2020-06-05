@@ -7,20 +7,23 @@ In this examples, we load the data from an existing HTML table
 
 import { Grid } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 <CodeBlock children={
 `
 function () {
+  const tableRef = useRef(null);
+  const wrapperRef = useRef(null);
+  
   useEffect(() => {
     const grid = new Grid({
-      from: document.getElementById('myTable')
-    }).render(document.getElementById('wrapper'));
+      from: tableRef.current,
+    }).render(wrapperRef.current);
   });
   
   return (
     <>
-      <table id="myTable">
+      <table ref={tableRef}>
         <thead>
           <tr>
             <th>Name</th>
@@ -38,7 +41,7 @@ function () {
           </tr>
         </tbody>
       </table>
-      <div id="wrapper" />
+      <div ref={wrapperRef} />
     </>
   );
 }
