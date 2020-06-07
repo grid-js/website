@@ -68,10 +68,10 @@ to the `html` function.
 `
 const grid = new Grid({
   columns: [
-      'Name',
-      'Email',
-      'Actions',
-   ],
+    'Name',
+    'Email',
+    'Actions',
+  ],
   data: Array(5).fill().map(x => [
     faker.name.findName(),
     faker.internet.email(),
@@ -80,7 +80,8 @@ const grid = new Grid({
         "<center>hello!</center>" +
       "</div>"
     )
-  ])
+  ]),
+  search: true
 });
 `
 }
