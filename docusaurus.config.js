@@ -9,6 +9,7 @@ module.exports = {
   organizationName: 'grid-js',
   projectName: 'website',
   themeConfig: {
+    image: '/img/social.png',
     algolia: {
     apiKey: '15086b8795378f5116d77008d1c3ebf0',
     indexName: 'gridjs',
