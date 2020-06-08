@@ -33,6 +33,8 @@ module.exports = {
       items: [
         'examples/cell-formatting',
         'examples/html-cells',
+        'examples/multi-sort',
+        'examples/custom-sort',
       ]
     }]
   },
