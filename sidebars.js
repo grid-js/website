@@ -29,6 +29,15 @@ module.exports = {
       ]
     }, {
       type: 'category',
+      label: 'Server-side',
+      items: [
+        'examples/server',
+        'examples/server-side-search',
+        'examples/server-side-pagination',
+        'examples/server-side-sort',
+      ]
+    }, {
+      type: 'category',
       label: 'Advanced',
       items: [
         'examples/cell-formatting',
