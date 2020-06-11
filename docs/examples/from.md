@@ -37,7 +37,7 @@ function () {
           </tr>
           <tr>
             <td>Mike</td>
-            <td>mike@example.com</td>
+            <td><b>mike@example.com</b></td>
           </tr>
         </tbody>
       </table>

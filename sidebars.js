@@ -41,6 +41,7 @@ module.exports = {
       type: 'category',
       label: 'Advanced',
       items: [
+        'examples/force-render',
         'examples/cell-formatting',
         'examples/html-cells',
         'examples/multi-sort',
