@@ -7,6 +7,9 @@ import { Grid, html } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
 import { useEffect, useRef } from "react";
 
+Add `server` property to the `pagination` config to enable server-side pagination. Also, make sure the `total` property
+is correctly defined in the main `server` config block:
+
 <CodeBlock children={
 `
 const grid = new Grid({
@@ -44,3 +47,7 @@ function () {
 }
 `
 } live={true} scope={{ Grid, CodeBlock, useEffect, useRef, html }} />
+
+:::tip
+You can also send POST HTTP calls if you add `method: 'POST'` to the main `server` config.
+:::

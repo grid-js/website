@@ -407,7 +407,7 @@ function Footer() {
 }
 
 function Install() {
-  const example = `new Gridjs({ 
+  const example = `new Grid({ 
   columns: ['Name', 'Email'],
   data: [
     ['John', 'john@example.com'],

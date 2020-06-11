@@ -4,7 +4,8 @@ module.exports = {
     Usage: [
       'install',
       'hello-world',
-      'config'
+      'config',
+      'server-side',
     ],
     Examples: [{
       type: 'category',

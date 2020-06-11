@@ -7,13 +7,16 @@ import { Grid } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
 import { useEffect, useRef } from "react";
 
+Add `server` config to your search definition to enable server-side search:
+
 <CodeBlock children={
 `
 const grid = new Grid({
   search: {
     server: {
       url: (prev, keyword) => \`\${prev}?search=\${keyword}\`
-    }
+    },
+    placeholder: 'Search in title...'
   },
   columns: ['Title', 'Director', 'Producer'],
   server: {

@@ -7,7 +7,7 @@ import { Grid, html } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
 import { useEffect, useRef } from "react";
 
-Server side search:
+Simply add `server` config to the `sort` block to enable server-side sorting:
 
 <CodeBlock children={
 `

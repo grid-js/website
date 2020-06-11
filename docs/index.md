@@ -12,7 +12,7 @@ Grid.js is a table plugin written in TypeScript.
 It is developed to be used with all popular JavaScript frameworks
 include **React**, **Angular.js**, **Vue** or without any frameworks!
 
- - Small. Only 9kb (minified and gzipped)
+ - Small. Only 12kb with all plugins (minified and gzipped)
  - Fast! Grid.js has an internal pipeline that takes care of caching and processing data
  - Works with all web frameworks
  - Supports all modern web-browsers
