@@ -32,3 +32,8 @@ ul.contents {
   list-style: none;
   border-left: 1px solid #d2d6dc;
 }
+
+.full-width > table {
+  width: 100%;
+  display: table;
+}

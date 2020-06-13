@@ -7,6 +7,17 @@ module.exports = {
       'config',
       'server-side',
     ],
+    Config: [
+      'config/data',
+      'config/from',
+      'config/columns',
+      'config/server',
+      'config/width',
+      'config/autoWidth',
+      'config/search',
+      'config/sort',
+      'config/pagination',
+    ],
     Examples: [{
       type: 'category',
       label: 'Basic',

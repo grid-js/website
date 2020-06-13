@@ -1,0 +1,39 @@
+---
+id: search
+title: search 
+---
+
+To enable or disable the global search plugin
+
+ - `optional`
+ - Type: `boolean` or `SearchConfig`
+ - Example: [Search](./examples/search.md) and [Server-side search](./examples/server-side-search.md)
+
+`SearchConfig` type has the following properties:
+
+<div className="full-width">
+
+| Name                       | Description                  |  Type   | Example             |
+|----------------------------|------------------------------|---------|---------------------|
+| enabled                    | to enable/disable the plugin | boolean | `true` or `false`   |
+| keyword `optional`         | to initiate with a keyword   | string  | `John`              |
+| placeholder `optional`     | search input placeholder     | string  | `Type a keyword...` |
+| server `optional`          | to enable server integration | string  | [Server-side search](./examples/server-side-search.md) |
+| debounceTimeout `optional` | search debounce timout       | number  | `1000` (1 second)   |
+
+</div>
+
+```js
+new Grid({
+  data: [
+    ['John', 'john@example.com', '(353) 01 222 3333'],
+    ['Mark', 'mark@gmail.com',   '(01) 22 888 4444'],
+    ['Eoin', 'eo3n@yahoo.com',   '(05) 10 878 5554'],
+    ['Nisen', 'nis900@gmail.com',   '313 333 1923']
+  ],
+  search: {
+    enabled: true,
+    placeholder: 'Search...'
+  }
+});
+```
