@@ -24,10 +24,10 @@ To load and import data from a remote URL. Server storage uses `fetch` API to se
 
 ```js
 new Grid({
-  columns: ['Title', 'Director', 'Producer'],
+  columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
-    url: 'https://swapi.dev/api/films/',
-    then: data => data.results.map(movie => [movie.title, movie.director, movie.producer])
+    url: 'https://api.scryfall.com/cards/search?q=Inspiring',
+    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
   } 
 });
 ```

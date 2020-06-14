@@ -20,16 +20,16 @@ Add `server` config to your search definition to enable server-side search:
 <CodeBlock children={
 `
 const grid = new Grid({
+  pagination: true,
   search: {
     server: {
-      url: (prev, keyword) => \`\${prev}?search=\${keyword}\`
-    },
-    placeholder: 'Search in title...'
+      url: (prev, keyword) => keyword ? \`\${prev}/search?q=\${keyword}\` : prev,
+    }
   },
-  columns: ['Title', 'Director', 'Producer'],
+  columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
-    url: 'https://swapi.dev/api/films/',
-    then: data => data.results.map(movie => [movie.title, movie.director, movie.producer])
+    url: 'https://api.scryfall.com/cards',
+    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
   } 
 });
 `

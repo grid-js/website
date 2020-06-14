@@ -19,14 +19,15 @@ Lets setup a Grid.js instance that pulls from a server-side API.
 
 First of all, make sure you have defined the generic `server` config in your Grid.js instance:
 
-```js {3-8}
+```js {5-9}
 const grid = new Grid({
-  columns: ['Title', 'Director', 'Producer'],
+  pagination: {
+    limit: 5
+  },
+  columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
-    url: 'https://swapi.dev/api/films/',
-    then: data => data.results.map(movie => 
-      [movie.title, movie.director, movie.producer]
-    )
+    url: 'https://api.scryfall.com/cards',
+    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
   } 
 });
 ```
@@ -34,8 +35,8 @@ const grid = new Grid({
 Here we are basically telling the instance that:
 
  - Our data source is a `ServerStorage` (instead of in-memory storage).
- - The base URL is `https://swapi.dev/api/films/`
- - Once we have received the data, let's feed the table with `movie.title`, `movie.director` and `movie.producer` which is
+ - The base URL is `https://api.scryfall.com/cards`
+ - Once we have received the data, let's feed the table with `card.name`, `card.lang`, `card.released_at` and `card.artist` which is
  our table columns (`then` function)
  
 The HTTP method is implicitly set to `GET` but we can change it to `POST` using the `method` property:
@@ -54,10 +55,13 @@ At this point, we have a fully functional server-side table, lets take a look!
 <CodeBlock children={
 `
 const grid = new Grid({
-  columns: ['Title', 'Director', 'Producer'],
+  pagination: {
+    limit: 5
+  },
+  columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
-    url: 'https://swapi.dev/api/films/',
-    then: data => data.results.map(movie => [movie.title, movie.director, movie.producer])
+    url: 'https://api.scryfall.com/cards',
+    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
   } 
 });
 `
@@ -93,10 +97,10 @@ Grid.js is smart enough to understand that you want to pull the data once and th
 `
 const grid = new Grid({
   search: true,
-  columns: ['Title', 'Director', 'Producer'],
+  columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
-    url: 'https://swapi.dev/api/films/',
-    then: data => data.results.map(movie => [movie.title, movie.director, movie.producer])
+    url: 'https://api.scryfall.com/cards/search?q=Inspiring',
+    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
   } 
 });
 `
@@ -135,13 +139,13 @@ All Grid.js plugins support server-side storage. All you need to do is defining 
 ```js {3}
 search: {
   server: {
-    url: (prev, keyword) => `${prev}?search=${keyword}`
+    url: (prev, keyword) => keyword ? `${prev}/search?q=${keyword}` : prev,
   }
 }
 ```
 
 In this example, we are telling the search plugin to refine the base URL (defined in the main `server` section) and append
-the keyword to base URL. `prev` is the base URL (or the URL received from the previous step of the pipeline) and `keyword`
+the keyword to base URL. `prev` is the base URL (or the URL received from the previous step of the pipeline) and `q`
 is the actual keyword input by the user.
 
 This is the final version of our config that includes the server-side search:
@@ -149,16 +153,18 @@ This is the final version of our config that includes the server-side search:
 <CodeBlock children={
 `
 const grid = new Grid({
+  pagination: {
+    limit: 5
+  },
   search: {
     server: {
-      url: (prev, keyword) => \`\${prev}?search=\${keyword}\`
-    },
-    placeholder: 'Search in title...'
+      url: (prev, keyword) => keyword ? \`\${prev}/search?q=\${keyword}\` : prev,
+    }
   },
-  columns: ['Title', 'Director', 'Producer'],
+  columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
-    url: 'https://swapi.dev/api/films/',
-    then: data => data.results.map(movie => [movie.title, movie.director, movie.producer])
+    url: 'https://api.scryfall.com/cards',
+    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
   } 
 });
 `
