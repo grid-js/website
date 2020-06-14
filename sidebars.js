@@ -1,13 +1,13 @@
 module.exports = {
   sidebar: {
-    Introduction: ['index', 'philosophy', 'roadmap', 'community', 'license'],
-    Usage: [
+    "👋 Introduction": ['index', 'philosophy', 'roadmap', 'community', 'license'],
+    "💁 Usage": [
       'install',
       'hello-world',
       'config',
       'server-side',
     ],
-    Config: [
+    "🛠 Config": [
       'config/data',
       'config/from',
       'config/columns',
@@ -19,7 +19,10 @@ module.exports = {
       'config/sort',
       'config/pagination',
     ],
-    Examples: [{
+    "🔌 Integrations": [
+      'integrations/react',
+    ],
+    "🎮 Examples": [{
       type: 'category',
       label: 'Basic',
       items: [
