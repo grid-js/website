@@ -12,6 +12,7 @@ module.exports = {
       'config/from',
       'config/columns',
       'config/server',
+      'config/language',
       'config/width',
       'config/autoWidth',
       'config/search',

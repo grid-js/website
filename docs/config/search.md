@@ -17,7 +17,6 @@ To enable or disable the global search plugin
 |----------------------------|------------------------------|---------|---------------------|
 | enabled                    | to enable/disable the plugin | boolean | `true` or `false`   |
 | keyword `optional`         | to initiate with a keyword   | string  | `John`              |
-| placeholder `optional`     | search input placeholder     | string  | `Type a keyword...` |
 | server `optional`          | to enable server integration | string  | [Server-side search](./examples/server-side-search.md) |
 | debounceTimeout `optional` | search debounce timout       | number  | `1000` (1 second)   |
 
@@ -32,8 +31,13 @@ new Grid({
     ['Nisen', 'nis900@gmail.com',   '313 333 1923']
   ],
   search: {
-    enabled: true,
-    placeholder: 'Search...'
+    enabled: true
   }
 });
 ```
+
+<br/>
+
+:::tip
+You can customize the search placeholder using the `language` config. See [Internationalization](./examples/i18n.md).
+:::
