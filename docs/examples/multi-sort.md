@@ -1,6 +1,15 @@
 ---
 id: multi-sort
 title: Multi column sort
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - multi sort
+ - multi column sort
+ - column sort
 ---
 
 import { Grid } from "gridjs";

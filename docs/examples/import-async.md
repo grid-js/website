@@ -1,6 +1,14 @@
 ---
 id: import-async
 title: Async data import
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - async
+ - async function 
 ---
 
 import { Grid } from "gridjs";

@@ -1,6 +1,15 @@
 ---
 id: server-side-sort
 title: Server Side Sorting
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - sort
+ - server side sort
+ - server sort
 ---
 
 import { Grid, html } from "gridjs";

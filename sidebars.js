@@ -57,6 +57,7 @@ module.exports = {
         'examples/html-cells',
         'examples/multi-sort',
         'examples/custom-sort',
+        'examples/i18n',
       ]
     }]
   },

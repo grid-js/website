@@ -1,6 +1,14 @@
 ---
 id: server-side-pagination
 title: Server Side Pagination
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - pagination
+ - server side pagination
 ---
 
 import { Grid, html } from "gridjs";

@@ -1,6 +1,15 @@
 ---
 id: pagination
 title: Pagination
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - page
+ - table page
+ - pagination
 ---
 
 import { Grid } from "gridjs";

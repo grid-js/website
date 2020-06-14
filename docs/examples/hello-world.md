@@ -1,6 +1,12 @@
 ---
 id: hello-world
 title: Hello, World!
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
 ---
 
 import { Grid } from "gridjs";

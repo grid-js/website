@@ -1,6 +1,15 @@
 ---
 id: cell-formatting
 title: Cell formatting
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - formatting
+ - cell formatting
+ 
 ---
 
 import { Grid } from "gridjs";

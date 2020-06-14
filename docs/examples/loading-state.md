@@ -1,6 +1,14 @@
 ---
 id: loading-state
 title: Loading State
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - load
+ - loading
 ---
 
 import { Grid } from "gridjs";

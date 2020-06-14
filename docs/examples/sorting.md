@@ -1,6 +1,14 @@
 ---
 id: sorting
 title: Sorting
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - sorting
+ - table sorting
 ---
 
 import { Grid } from "gridjs";

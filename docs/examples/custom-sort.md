@@ -1,6 +1,15 @@
 ---
 id: custom-sort
 title: Custom sort
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - sort
+ - custom sort
+ - sorting 
 ---
 
 import { Grid } from "gridjs";

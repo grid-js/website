@@ -1,6 +1,13 @@
 ---
 id: html-cells
 title: Populating cells with HTML
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - html cell
 ---
 
 import { Grid, html } from "gridjs";

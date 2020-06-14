@@ -1,6 +1,14 @@
 ---
 id: import-function
 title: Dynamic data import 
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - import
+ - import data
 ---
 
 import { Grid } from "gridjs";

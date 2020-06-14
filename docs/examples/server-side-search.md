@@ -1,6 +1,14 @@
 ---
 id: server-side-search
 title: Server Side Search
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - server side search
+ - server search
 ---
 
 import { Grid } from "gridjs";

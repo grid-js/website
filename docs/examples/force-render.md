@@ -1,6 +1,13 @@
 ---
 id: force-render
 title: forceRender
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - force render
 ---
 
 import { Grid } from "gridjs";

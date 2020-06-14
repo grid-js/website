@@ -1,6 +1,15 @@
 ---
 id: search
 title: Search
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - search
+ - table search
+ - row search
 ---
 
 import { Grid } from "gridjs";

@@ -1,6 +1,14 @@
 ---
 id: from
 title: From HTML Table 
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - html
+ - html elements
 ---
 
 In this examples, we load the data from an existing HTML table

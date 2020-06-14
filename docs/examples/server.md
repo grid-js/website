@@ -1,6 +1,14 @@
 ---
 id: server
 title: Import server-side data
+keywords:
+ - javascript
+ - table
+ - javascript table
+ - gridjs
+ - grid js
+ - server side
+ - server side data
 ---
 
 import { Grid } from "gridjs";
