@@ -117,17 +117,15 @@ function Header() {
       columns: [
         {
           name: 'Name',
-          sort: true
         },
         {
           name: 'Job',
-          sort: true
         },
         {
-          name: 'Country',
-          sort: true
+          name: 'Country'
         }
       ],
+      sort: true,
       pagination: {
         enabled: true,
         summary: false,

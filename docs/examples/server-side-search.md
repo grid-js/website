@@ -15,8 +15,7 @@ import { Grid } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
 import { useEffect, useRef } from "react";
 
-Add `server` config to your search definition to enable server-side search. Note that in this example, we have to handle
-the HTTP status code 404 ourselves because api.scryfall.com return 404 error if there is no matching record in `?q=` query string:
+Add `server` config to your search definition to enable server-side search:
 
 <CodeBlock children={
 `
@@ -24,20 +23,13 @@ const grid = new Grid({
   pagination: true,
   search: {
     server: {
-      url: (prev, keyword) => keyword ? \`\${prev}/search?q=\${keyword}\` : prev,
+      url: (prev, keyword) => \`\${prev}?search=\${keyword}\`
     }
   },
-  columns: ['Name', 'Language', 'Released At', 'Artist'],
+  columns: ['Title', 'Director', 'Producer'],
   server: {
-    url: 'https://api.scryfall.com/cards',
-    handle: (res) => {
-      // no matching records found
-      if (res.status === 404) return {data: []};
-      if (res.ok) return res.json();
-      
-      throw Error('oh no :(');
-    },
-    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
+    url: 'https://swapi.dev/api/films/',
+    then: data => data.results.map(movie => [movie.title, movie.director, movie.producer])
   } 
 });
 `

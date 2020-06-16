@@ -17,6 +17,7 @@ To load and import data from a remote URL. Server storage uses `fetch` API to se
 | headers `optional` | HTTP headers                         | HeadersInit | `{ 'Accept-Charset': 'utf-8', 'X-My-Custom-Header': 'cool' }` |
 | body `optional`    | HTTP Body payload                    | BodyInit    | `{ 'loginId': 'gridjs', 'password': 'd4da' }`
 | then `optional`    | Function to refine/select attributes | Function    | `(data) => [data.name, data.email]` |
+| handle `optional`  | Function to handle the response      | Function    | `(res) => res.json()` |
 | total `optional`   | Function to set the total records    | Function    | `(data) => data.total`              |
 
 </div>
@@ -27,7 +28,14 @@ new Grid({
   columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
     url: 'https://api.scryfall.com/cards/search?q=Inspiring',
-    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist])
+    then: data => data.data.map(card => [card.name, card.lang, card.released_at, card.artist]),
+    handle: (res) => {
+      // no matching records found
+      if (res.status === 404) return {data: []};
+      if (res.ok) return res.json();
+      
+      throw Error('oh no :(');
+    },
   } 
 });
 ```
