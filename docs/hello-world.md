@@ -68,11 +68,15 @@ import "gridjs/dist/theme/mermaid.css";
 
 ### React
 
+Here is an example of using Grid.js in a React app (without the `gridjs-react` wrapper)
+
 ```jsx
 import { Grid } from "gridjs";
 import "gridjs/dist/theme/mermaid.css";
 
 function helloWorld () {
+  const wrapperRef = useRef(null);
+
   const grid = new Grid({
     columns: ['Name', 'Email', 'Phone Number'],
     data: [
@@ -82,14 +86,15 @@ function helloWorld () {
   });
   
   useEffect(() => {
-    grid.render(document.getElementById('wrapper'));
+    grid.render(wrapperRef.current);
   });
   
-  return (
-    <div id="wrapper" />
-  );
+  return <div ref={wrapperRef} />;
 }
-
 ```
 
+:::tip
+Above example is just to demonstrate how to import and initiate Grid.js. 
+Please use the `gridjs-react` component instead. See [React integration](./integrations/react.md).
+:::
 

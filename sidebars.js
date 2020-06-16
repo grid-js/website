@@ -42,6 +42,7 @@ module.exports = {
         'examples/import-async',
         'examples/server',
         'examples/from',
+        'examples/xml',
       ]
     }, {
       type: 'category',
