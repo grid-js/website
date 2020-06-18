@@ -1,6 +1,7 @@
---
+---
 id: vue
 title: 💚 Vue
+---
 
 <center><img src="https://user-images.githubusercontent.com/2541728/84843482-ffc31c00-b015-11ea-95e8-dc6fb3931ad5.png" alt="gridjs-vue logo" /></center>
 
@@ -25,7 +26,7 @@ Vue.use(Grid)
 
 ### Local Registration
 
-```vue
+```html
 <script>
 import Grid from 'gridjs-vue'
 
@@ -41,7 +42,7 @@ export default {
 
 Pass `cols` (an array of column headers) and either `rows`, `from`, or `server` as a data source to the component. Everything else is optional.
 
-Refer to [Grid.js documentation](https://gridjs.io/docs/config/) for specific configuration options.
+Refer to [Grid.js documentation](./config.md) for specific configuration options.
 
 ### Example
 
