@@ -12,9 +12,23 @@ Grid.js has a native Vue wrapper which can be used to create a Grid.js instance 
 npm install gridjs-vue
 ```
 
-## Component Registration
+### Component Registration
 
-### Global Registration
+#### Local Registration
+
+```html
+<script>
+  import Grid from 'gridjs-vue'
+
+  export default {
+    components: {
+      Grid
+    }
+  }
+</script>
+```
+
+#### Global Registration
 
 ```js
 /* in `main.js` or wherever you specify your global components */
@@ -23,29 +37,61 @@ import Grid from 'gridjs-vue'
 Vue.use(Grid)
 ```
 
-### Local Registration
-
-```vue
-<script>
-import Grid from 'gridjs-vue'
-
-export default {
-  components: {
-    Grid
-  }
-}
-</script>
-```
-
 ## Usage
 
 Pass `cols` (an array of column headers) and either `rows`, `from`, or `server` as a data source to the component. Everything else is optional.
 
 Refer to [Grid.js documentation](https://gridjs.io/docs/config/) for specific configuration options.
 
-### Example
+### Basic Example
 
-```vue
+```html
+<template>
+  <grid :cols="cols" :rows="rows"></grid>
+</template>
+
+<script>
+  import Grid from 'gridjs-vue'
+
+  export default {
+    name: 'Cars',
+    components: {
+      Grid
+    },
+    data() {
+      return {
+        cols: ['Make', 'Model', 'Year', 'Color'],
+        rows: [
+          ['Ford', 'Fusion', '2011', 'Silver'],
+          ['Chevrolet', 'Cruz', '2018', 'White']
+        ]
+      }
+    }
+  }
+</script>
+```
+
+### Default Options
+
+```json
+{
+  "autoWidth": true,
+  "cols": [""],
+  "from": undefined,
+  "language": undefined,
+  "pagination": false,
+  "rows": undefined,
+  "search": false,
+  "server": undefined,
+  "sort": false,
+  "theme": "mermaid",
+  "width": "100%"
+}
+```
+
+### Extended Options
+
+```html
 <template>
   <grid
     :auto-width="autoWidth"
@@ -62,59 +108,62 @@ Refer to [Grid.js documentation](https://gridjs.io/docs/config/) for specific co
 </template>
 
 <script>
-import Grid from 'gridjs-vue'
+  import Grid from 'gridjs-vue'
 
-export default {
-  name: 'MyTable',
-  components: {
-    Grid
-  },
-  data() {
-    return {
-      // REQUIRED:
-      cols: ['col 1', 'col 2'], // array containing strings of column headers
-      // AND EITHER an array containing row data
-      rows: [
-        ['row 1 col 1', 'row 1 col 2'],
-        ['row 2 col 1', 'row 2 col 2']
-      ],
-      // OR a string of an HTML table selector to import
-      from: '.my-element'
-      // OR a server settings object
-      server() ({
-        url: 'https://api.com/search?q=my%20query',
-        then: res => res.data.map(col => [col1.data, col2.data, col3.data, col4.data]),
-        handle: res => res.status === 404 ? { data: [] } : res.ok ? res.json() : new Error('Something went wrong')
-      }),
+  export default {
+    name: 'MyTable',
+    components: {
+      Grid
+    },
+    data() {
+      return {
+        // REQUIRED:
 
-      // OPTIONAL:
-      autoWidth: true / false, // boolean to automatically set table width
-      language: {}, // localization dictionary object
-      pagination: true / false || {}, // boolean or pagination settings object
-      search: true / false || {}, // boolean or search settings object
-      sort: true / false || {}, // boolean or sort settings object
-      theme: 'mermaid', // string with name of theme or 'none' to disable
-      width: '100%', // string with css width value
+        // An array containing strings of column headers
+        cols: ['col 1', 'col 2'],
+
+        // AND EITHER an array containing row data
+        rows: [
+          ['row 1 col 1', 'row 1 col 2'],
+          ['row 2 col 1', 'row 2 col 2']
+        ],
+
+        // OR a string of an HTML table selector to import
+        from: '.my-element'
+
+        // OR a server settings object
+        server() ({
+          url: 'https://api.com/search?q=my%20query',
+          then: res => res.data.map(col => [col1.data, col2.data]),
+          handle: res => res.status === 404
+            ? { data: [] } : res.ok
+            ? res.json() : new Error('Something went wrong')
+        }),
+
+        // OPTIONAL:
+
+        // Boolean to automatically set table width
+        autoWidth: true / false,
+
+        // Localization dictionary object
+        language: {},
+
+        // Boolean or pagination settings object
+        pagination: true / false || {},
+
+        // Boolean or search settings object
+        search: true / false || {},
+
+        // Boolean or sort settings object
+        sort: true / false || {},
+
+        // String with name of theme or 'none' to disable
+        theme: 'mermaid',
+
+        // String with css width value
+        width: '100%',
+      }
     }
   }
-}
 </script>
-```
-
-### Default options
-
-```json
-{
-  "autoWidth": true,
-  "cols": [""],
-  "from": undefined,
-  "language": undefined,
-  "pagination": false,
-  "rows": undefined,
-  "search": false,
-  "server": undefined,
-  "sort": false,
-  "theme": "mermaid",
-  "width": "100%"
-}
 ```
