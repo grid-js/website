@@ -21,6 +21,7 @@ module.exports = {
     ],
     "🔌 Integrations": [
       'integrations/react',
+      'integrations/vue',
     ],
     "🎮 Examples": [{
       type: 'category',

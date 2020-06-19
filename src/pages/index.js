@@ -1,10 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Head from '@docusaurus/Head';
 import ThemeProvider from '@theme/ThemeProvider';
-import TabGroupChoiceProvider from '@theme/TabGroupChoiceProvider';
 import AnnouncementBar from '@theme/AnnouncementBar';
 import CodeBlock from '@theme/CodeBlock';
-import Link from '@docusaurus/Link';
 import faker from "faker";
 import { Grid } from "gridjs";
 import "gridjs/dist/theme/mermaid.css";
