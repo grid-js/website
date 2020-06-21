@@ -61,6 +61,8 @@ module.exports = {
         'examples/force-render',
         'examples/cell-formatting',
         'examples/html-cells',
+        'examples/virtual-dom',
+        'examples/react-cells',
         'examples/multi-sort',
         'examples/custom-sort',
         'examples/i18n',
