@@ -12,6 +12,8 @@ module.exports = {
       'config/from',
       'config/columns',
       'config/server',
+      'config/style',
+      'config/className',
       'config/language',
       'config/width',
       'config/autoWidth',
@@ -53,6 +55,14 @@ module.exports = {
         'examples/server-side-search',
         'examples/server-side-pagination',
         'examples/server-side-sort',
+      ]
+    }, {
+      type: 'category',
+      label: 'Styling',
+      items: [
+        'examples/css-style',
+        'examples/css-classname',
+        'examples/css-in-js',
       ]
     }, {
       type: 'category',
