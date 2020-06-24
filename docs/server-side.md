@@ -17,7 +17,7 @@ Lets setup a Grid.js instance that pulls from a server-side API.
 
 ## `server` config
 
-First of all, make sure you have defined the generic `server` config in your Grid.js instance:
+First of all make sure you have defined the generic `server` config in your Grid.js instance:
 
 ```js {3-8}
 const grid = new Grid({
