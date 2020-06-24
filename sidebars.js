@@ -76,6 +76,7 @@ module.exports = {
         'examples/multi-sort',
         'examples/custom-sort',
         'examples/i18n',
+        'examples/stock-market',
       ]
     }]
   },

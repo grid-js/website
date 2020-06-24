@@ -37,3 +37,16 @@ ul.contents {
   width: 100%;
   display: table;
 }
+
+.ct-chart svg  {
+  margin:1px;
+  vertical-align:text-bottom;
+}
+.ct-series-a .ct-line,
+.ct-series-a .ct-bar {
+  stroke: red;
+  stroke-width: 1px;
+}
+.ct-chart-pie .ct-label {
+  display:none;
+}
