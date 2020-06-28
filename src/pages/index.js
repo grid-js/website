@@ -237,7 +237,7 @@ function Header() {
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 Grid.js is a Free and open-source HTML table plugin written in TypeScript. It works with most JavaScript
-                frameworks, including <b>React</b>, <b>Angular.js</b>, <b>Vue</b> and <b>VanillaJs</b>.
+                frameworks, including <b>React</b>, <b>Angular</b>, <b>Vue</b> and <b>VanillaJs</b>.
               </p>
 
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

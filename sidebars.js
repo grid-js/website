@@ -41,11 +41,12 @@ module.exports = {
       type: 'category',
       label: 'Data Source',
       items: [
+        'examples/import-json',
+        'examples/import-xml',
+        'examples/from',
+        'examples/server',
         'examples/import-function',
         'examples/import-async',
-        'examples/server',
-        'examples/from',
-        'examples/xml',
       ]
     }, {
       type: 'category',
