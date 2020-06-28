@@ -13,16 +13,17 @@ To enable the pagination plugin
 
 <div className="full-width">
 
-| Name                    | Description                         |  Type         |
-|-------------------------|-------------------------------------|---------------|
-| enabled                 | to enable/disable pagination        | boolean       |
-| limit `optional`        | rows per page                       | number        |
-| page `optional`         | initial page                        | number        |
-| summary `optional`      | to show/hide the pagination summary | boolean       |
-| nextButton `optional`   | to show/hide the next button        | boolean       |
-| prevButton `optional`   | to show/hide the previous button    | boolean       |
-| buttonsCount `optional` | number of buttons to display        | number        |
-| server `optional`       | to enable server-side integration   | ServerConfig  |
+| Name                         | Description                                   |  Type         |
+|------------------------------|-----------------------------------------------|---------------|
+| enabled                      | to enable/disable pagination                  | boolean       |
+| limit `optional`             | rows per page                                 | number        |
+| page `optional`              | initial page                                  | number        |
+| summary `optional`           | to show/hide the pagination summary           | boolean       |
+| nextButton `optional`        | to show/hide the next button                  | boolean       |
+| prevButton `optional`        | to show/hide the previous button              | boolean       |
+| buttonsCount `optional`      | number of buttons to display                  | number        |
+| resetPageOnUpdate `optional` | to reset the pagination when table is updated | boolean       |
+| server `optional`            | to enable server-side integration             | ServerConfig  |
 
 </div>
 
