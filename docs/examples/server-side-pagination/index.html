@@ -10,17 +10,18 @@
 <link rel="search" type="application/opensearchdescription+xml" title="Grid.js" href="/opensearch.xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css"><title data-react-helmet="true">Server Side Pagination | Grid.js</title><meta data-react-helmet="true" property="og:image" content="https://gridjs.io/img/social.png"><meta data-react-helmet="true" property="twitter:image" content="https://gridjs.io/img/social.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for Grid.js"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Server Side Pagination | Grid.js"><meta data-react-helmet="true" name="description" content="Add server property to the pagination config to enable server-side pagination. Also, make sure the total property"><meta data-react-helmet="true" property="og:description" content="Add server property to the pagination config to enable server-side pagination. Also, make sure the total property"><meta data-react-helmet="true" name="keywords" content="javascript,table,javascript table,gridjs,grid js,pagination,server side pagination"><meta data-react-helmet="true" property="og:url" content="https://gridjs.io/docs/examples/server-side-pagination"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://gridjs.io/docs/examples/server-side-pagination"><link rel="stylesheet" href="/styles.e38f7b67.css">
-<link rel="preload" href="/styles.d6f744eb.js" as="script">
-<link rel="preload" href="/runtime~main.256f2dab.js" as="script">
-<link rel="preload" href="/main.a9019cd1.js" as="script">
-<link rel="preload" href="/common.1b5c213a.js" as="script">
-<link rel="preload" href="/3.465bfab7.js" as="script">
-<link rel="preload" href="/4.dfcc6b36.js" as="script">
-<link rel="preload" href="/1be78505.fe4f7599.js" as="script">
-<link rel="preload" href="/74.0f486391.js" as="script">
+<link rel="preload" href="/styles.7a442eae.js" as="script">
+<link rel="preload" href="/runtime~main.2fe488b7.js" as="script">
+<link rel="preload" href="/main.d5fba403.js" as="script">
+<link rel="preload" href="/common.a144e057.js" as="script">
+<link rel="preload" href="/3.fb5342c5.js" as="script">
+<link rel="preload" href="/4.ea5fa3c5.js" as="script">
+<link rel="preload" href="/1be78505.bb27ddf9.js" as="script">
+<link rel="preload" href="/74.249903cc.js" as="script">
 <link rel="preload" href="/20ac7829.94c63d85.js" as="script">
-<link rel="preload" href="/17896441.cfb6c5ec.js" as="script">
-<link rel="preload" href="/d830333b.493bd631.js" as="script">
+<link rel="preload" href="/17896441.d1017383.js" as="script">
+<link rel="preload" href="/2.d78c1530.js" as="script">
+<link rel="preload" href="/d830333b.25e94e1f.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -67,16 +68,17 @@ is correctly defined in the main <code>server</code> config block:</p><div class
   }
 }
 </style></div><div class="playgroundHeader_Qk2G playgroundPreviewHeader_3F8q">Result</div><div class="playgroundPreview_1lgU"><div><div></div></div></div><div class="admonition admonition-tip alert alert--success"><div class="admonition-heading"><h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</h5></div><div class="admonition-content"><p>You can also send POST HTTP calls if you add <code>method: &#x27;POST&#x27;</code> to the main <code>server</code> config.</p></div></div></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/grid-js/website/edit/master/docs/examples/server-side-pagination.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col text--right"><em><small>Last updated on <time datetime="2020-06-14T12:57:18.000Z" class="docLastUpdatedAt_1sqk">2020-6-14</time> by <strong>Afshin Mehrabani</strong></small></em></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/examples/server-side-search"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Server Side Search</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/examples/server-side-sort"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Server Side Sorting »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/index">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/examples/hello-world">Examples</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/gridjs" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow</a></li><li class="footer__item"><a href="https://discord.gg/K55BwDY" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord</a></li><li class="footer__item"><a href="https://twitter.com/grid_js" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/grid-js/gridjs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 Usablica Limited.</div></div></div></footer></div>
-<script src="/styles.d6f744eb.js"></script>
-<script src="/runtime~main.256f2dab.js"></script>
-<script src="/main.a9019cd1.js"></script>
-<script src="/common.1b5c213a.js"></script>
-<script src="/3.465bfab7.js"></script>
-<script src="/4.dfcc6b36.js"></script>
-<script src="/1be78505.fe4f7599.js"></script>
-<script src="/74.0f486391.js"></script>
+<script src="/styles.7a442eae.js"></script>
+<script src="/runtime~main.2fe488b7.js"></script>
+<script src="/main.d5fba403.js"></script>
+<script src="/common.a144e057.js"></script>
+<script src="/3.fb5342c5.js"></script>
+<script src="/4.ea5fa3c5.js"></script>
+<script src="/1be78505.bb27ddf9.js"></script>
+<script src="/74.249903cc.js"></script>
 <script src="/20ac7829.94c63d85.js"></script>
-<script src="/17896441.cfb6c5ec.js"></script>
-<script src="/d830333b.493bd631.js"></script>
+<script src="/17896441.d1017383.js"></script>
+<script src="/2.d78c1530.js"></script>
+<script src="/d830333b.25e94e1f.js"></script>
 </body>
 </html>
