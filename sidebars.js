@@ -72,6 +72,7 @@ module.exports = {
         'examples/force-render',
         'examples/cell-formatting',
         'examples/html-cells',
+        'examples/html-header-cells',
         'examples/virtual-dom',
         'examples/react-cells',
         'examples/multi-sort',

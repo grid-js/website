@@ -1,6 +1,6 @@
 ---
-id: html-cells
-title: HTML in cells
+id: html-header-cells
+title: HTML in header cells 
 keywords:
  - javascript
  - table
@@ -8,9 +8,10 @@ keywords:
  - gridjs
  - grid js
  - html cell
+ - html header
 ---
 
-import { Grid, html } from "gridjs";
+import { Grid, html, h } from "gridjs";
 import CodeBlock from "@theme/CodeBlock"
 import { useEffect, useRef } from "react";
 import * as faker from 'faker';
@@ -21,26 +22,20 @@ Import the `html` function first:
 import { Grid, html } from "gridjs";
 ```
 
-Then you can use that in `formatter` function or directly in `data` array:
+Then you can use that in `columns` or `name` field of `columns`:
 
 <CodeBlock children={
 `
 const grid = new Grid({
   columns: [
       { 
-        name: 'Name',
-        formatter: (cell) => html(\`<b>\${cell}</b>\`)
+        name: html('<i>Name</i>'),
       },
-      'Email',
-      { 
-        name: 'Actions',
-        formatter: (_, row) => html(\`<a href='mailto:\${row.cells[1].data}'>Email</a>\`)
-      },
+      html('<div style="border: 1px solid #ccc;padding: 5px;border-radius: 5px;text-align: center;">Email</div>'),
    ],
   data: Array(5).fill().map(x => [
     faker.name.findName(),
     faker.internet.email(),
-    null
   ])
 });
 `
@@ -65,28 +60,29 @@ function () {
 
 <br/>
 
-:::note
-Using the `html` function can expose your application to [XSS attacks](https://en.wikipedia.org/wiki/Cross-site_scripting).
-Make sure you understand the implications of using this function and **always** sanitize the user inputs before passing them
-to the `html` function.
-:::
+You can also create a virtual DOM and attach it to header cells:
+
+```js
+import { Grid, h } from "gridjs";
+```
 
 <CodeBlock children={
 `
 const grid = new Grid({
   columns: [
-    'Name',
-    'Email',
-    'Actions',
+    h('b', {}, 'Name'),
+    h('div', {
+      style: {
+        border: '1px solid #ccc',
+        padding: '5px',
+        'border-radius': '5px',
+        'text-align': 'center',
+      }
+    }, 'Email'),
   ],
   data: Array(5).fill().map(x => [
     faker.name.findName(),
     faker.internet.email(),
-    html(
-      "<div style='padding: 2px; border: 1px solid #ccc;border-radius: 4px;'>" +
-        "<center>hello!</center>" +
-      "</div>"
-    )
   ]),
   search: true
 });
@@ -108,4 +104,4 @@ function () {
   );
 }
 `
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker, html }} />
+} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker, h }} />
