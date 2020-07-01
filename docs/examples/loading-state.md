@@ -11,14 +11,12 @@ keywords:
  - loading
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 Grid.js renders a loading bar automatically while it waits for the data to be fetched. Here we are using an async 
 function to demonstrate this behaviour (e.g. an async function can be a XHR call to a server backend)
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
@@ -35,22 +33,7 @@ const grid = new Grid({
   }
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
-  
-  useEffect(() => {
-    grid.render(document.getElementById('wrapper'));
-  });
-  
-  return (
-    <div id="wrapper" />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect }} />  
+} />  
 
 <br/>
 

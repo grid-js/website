@@ -12,9 +12,7 @@ keywords:
  
 ---
 
-import { Grid, h, createRef as gCreateRef } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef, useState } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 import Chartist from 'chartist';
 import "chartist/dist/chartist.min.css";
 
@@ -26,7 +24,7 @@ import { Grid, h, createRef as gCreateRef } from "gridjs";
 import Chartist from 'chartist';
 ```
 
-<CodeBlock children={
+<LiveExample children={
 `
 // Chartist options
 const opts = {
@@ -77,22 +75,5 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, h, gCreateRef, CodeBlock, useEffect, useRef, useState, Chartist }} />
+} scope={{ Chartist }} />
 

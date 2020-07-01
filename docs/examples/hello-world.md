@@ -9,15 +9,13 @@ keywords:
  - grid js
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 :::tip
 You can interact with the following editor!
 :::
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
@@ -27,28 +25,13 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
-  
-  useEffect(() => {
-    grid.render(document.getElementById('wrapper'));
-  });
-  
-  return (
-    <div id="wrapper" />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect }} />
+} />
 
 <br/>
 
 Or you can update the config using `updateConfig`:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   data: [
@@ -59,22 +42,5 @@ const grid = new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  const wrapper = useRef(null);
-  
-  ${code}
-  
-  useEffect(() => {
-    grid.render(wrapper.current);
-  });
-  
-  return (
-    <div id="wrapper" ref={wrapper} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
+} />
 

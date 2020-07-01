@@ -10,10 +10,7 @@ keywords:
  - html cell
 ---
 
-import { Grid, html } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
-import * as faker from 'faker';
+import { LiveExample } from "../../lib/liveExample.js";
 
 Import the `html` function first:
 
@@ -23,7 +20,7 @@ import { Grid, html } from "gridjs";
 
 Then you can use that in `formatter` function or directly in `data` array:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -44,24 +41,7 @@ const grid = new Grid({
   ])
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker, html }} />
+} />
 
 <br/>
 
@@ -71,7 +51,7 @@ Make sure you understand the implications of using this function and **always** 
 to the `html` function.
 :::
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -91,21 +71,4 @@ const grid = new Grid({
   search: true
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker, html }} />
+} />

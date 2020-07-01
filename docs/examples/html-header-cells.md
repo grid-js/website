@@ -11,10 +11,7 @@ keywords:
  - html header
 ---
 
-import { Grid, html, h } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
-import * as faker from 'faker';
+import { LiveExample } from "../../lib/liveExample.js";
 
 Import the `html` function first:
 
@@ -24,7 +21,7 @@ import { Grid, html } from "gridjs";
 
 Then you can use that in `columns` or `name` field of `columns`:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -39,24 +36,7 @@ const grid = new Grid({
   ])
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker, html }} />
+} />
 
 <br/>
 
@@ -66,7 +46,7 @@ You can also create a virtual DOM and attach it to header cells:
 import { Grid, h } from "gridjs";
 ```
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -87,21 +67,4 @@ const grid = new Grid({
   search: true
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker, h }} />
+} />

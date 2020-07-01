@@ -11,9 +11,7 @@ keywords:
  - async function 
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 The `data` attribute accepts an `async` function, too. This is useful for making any external HTTP calls and loading
 data from a server. 
@@ -21,7 +19,7 @@ data from a server.
 Here we have passed a function to the `data` attribute which returns a `Promise` object and resolves
 the data after 1 second:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
@@ -36,20 +34,4 @@ const grid = new Grid({
   }
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
-  
-  useEffect(() => {
-    grid.render(document.getElementById('wrapper'));
-  });
-  
-  return (
-    <div id="wrapper" />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect }} />
-
+} />

@@ -11,10 +11,8 @@ keywords:
  - css in js
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
-import { css } from 'emotion'
+import { LiveExample } from "../../lib/liveExample.js";
+import { css } from 'emotion';
 
 You can use any CSS-in-JS frameworks with Grid.js. In this example, we are using [Emotion](https://emotion.sh/) to style
 our Grid.js instance.
@@ -31,7 +29,7 @@ import { css } from 'emotion';
 
 And then use the `className` config to connect them together:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
@@ -69,24 +67,7 @@ const grid = new Grid({
   }
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, css }} />
+} scope={{ css }} />
 
 <br/>
 

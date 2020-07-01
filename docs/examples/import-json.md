@@ -10,14 +10,12 @@ keywords:
  - import json
 ---
 
-import { Grid } from "gridjs/dist/gridjs.development.es.js";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 In order to import JSON (or an array of objects), simply change the data input to `[{ key: value }, ... ]`. 
 Grid.js expects each column to have a unique `id` field which matches the keys in the `data` object:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [{
@@ -36,24 +34,7 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
+} />
 
 <br />
 
@@ -63,7 +44,7 @@ Grid.js tries to guess the `id` of columns by camelCasing them if column ID is n
 E.g. `Phone Number` becomes `phoneNumber`
 :::
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
@@ -73,30 +54,13 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
+} />
 
 <br />
 
 You can also leave the `columns` config empty if you want Grid.js to set the column names automatically:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   data: [
@@ -105,22 +69,5 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
+} />
 

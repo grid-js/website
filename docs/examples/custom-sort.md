@@ -12,14 +12,12 @@ keywords:
  - sorting 
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 You can customize the sort plugin by using the `compare` function. Each column accepts a custom `compare` function.
 In this example, we are sorting the "Phone Number" column based on the _last 4 digits_:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -51,21 +49,4 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
+} />

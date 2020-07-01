@@ -18,7 +18,7 @@ import { useEffect, useRef } from "react";
 `className` config can be used to add CSS classNames to a Grid.js instance:
 
 ```js
-const grid = new Grid({
+new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
   search: true,
   data: [

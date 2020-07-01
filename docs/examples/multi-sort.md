@@ -12,13 +12,11 @@ keywords:
  - column sort
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 Grid.js supports multi column sorting by default. Hold the `shift` key and click on multiple columns to activate it:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -35,24 +33,7 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
+} />
 
 <br/>
 

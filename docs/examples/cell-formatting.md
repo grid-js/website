@@ -12,14 +12,11 @@ keywords:
  
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
-import * as faker from 'faker';
+import { LiveExample } from "../../lib/liveExample.js";
 
 You can customize cells and format them at runtime using `formatter` property:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -35,24 +32,7 @@ const grid = new Grid({
   ])
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker }} />
+} />
 
 :::info
 It is also possible to add HTML content to cells. See [Populating cells with HTML](html-cells.md).
@@ -60,7 +40,7 @@ It is also possible to add HTML content to cells. See [Populating cells with HTM
 
 You can also get access to other cells in the same row:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: [
@@ -78,22 +58,5 @@ const grid = new Grid({
   ])
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, faker }} />
+} />
 

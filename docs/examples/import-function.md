@@ -11,13 +11,11 @@ keywords:
  - import data
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 The `data` attribute accepts a function as well:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: ['Name', 'Email', 'Phone Number'],
@@ -27,20 +25,4 @@ const grid = new Grid({
   ]
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
-  
-  useEffect(() => {
-    grid.render(document.getElementById('wrapper'));
-  });
-  
-  return (
-    <div id="wrapper" />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect }} />
-
+} />

@@ -12,13 +12,11 @@ keywords:
  - server sort
 ---
 
-import { Grid, html } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 Simply add `server` config to the `sort` block to enable server-side sorting:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   sort: {
@@ -52,21 +50,4 @@ const grid = new Grid({
   } 
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, html }} />
+} />

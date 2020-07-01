@@ -11,13 +11,11 @@ keywords:
  - server search
 ---
 
-import { Grid } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 Add `server` config to your search definition to enable server-side search:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   pagination: true,
@@ -33,21 +31,4 @@ const grid = new Grid({
   } 
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef }} />
+} />

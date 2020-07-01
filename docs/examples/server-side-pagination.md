@@ -11,14 +11,12 @@ keywords:
  - server side pagination
 ---
 
-import { Grid, html } from "gridjs";
-import CodeBlock from "@theme/CodeBlock"
-import { useEffect, useRef } from "react";
+import { LiveExample } from "../../lib/liveExample.js";
 
 Add `server` property to the `pagination` config to enable server-side pagination. Also, make sure the `total` property
 is correctly defined in the main `server` config block:
 
-<CodeBlock children={
+<LiveExample children={
 `
 const grid = new Grid({
   columns: ['Pokemon', 'URL'],
@@ -37,24 +35,7 @@ const grid = new Grid({
   } 
 });
 `
-}
- transformCode={(code) => 
-`
-function () {
-  ${code}
- 
-  const wrapperRef = useRef(null);
-   
-  useEffect(() => {
-    grid.render(wrapperRef.current);
-  });
-  
-  return (
-    <div ref={wrapperRef} />
-  );
-}
-`
-} live={true} scope={{ Grid, CodeBlock, useEffect, useRef, html }} />
+} />
 
 :::tip
 You can also send POST HTTP calls if you add `method: 'POST'` to the main `server` config.
