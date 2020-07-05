@@ -67,17 +67,23 @@ module.exports = {
       ]
     }, {
       type: 'category',
+      label: 'Customizing',
+      items: [
+        'examples/cell-formatting',
+        'examples/row-buttons',
+        'examples/html-cells',
+        'examples/html-header-cells',
+        'examples/react-cells',
+        'examples/i18n',
+      ]
+    }, {
+      type: 'category',
       label: 'Advanced',
       items: [
         'examples/force-render',
-        'examples/cell-formatting',
-        'examples/html-cells',
-        'examples/html-header-cells',
         'examples/virtual-dom',
-        'examples/react-cells',
         'examples/multi-sort',
         'examples/custom-sort',
-        'examples/i18n',
         'examples/stock-market',
         'examples/event-handler',
       ]
