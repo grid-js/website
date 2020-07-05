@@ -79,6 +79,7 @@ module.exports = {
         'examples/custom-sort',
         'examples/i18n',
         'examples/stock-market',
+        'examples/event-handler',
       ]
     }]
   },
