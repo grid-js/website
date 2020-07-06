@@ -152,8 +152,7 @@ const grid = new Grid({
   search: {
     server: {
       url: (prev, keyword) => \`\${prev}?search=\${keyword}\`
-    },
-    placeholder: 'Search in title...'
+    }
   },
   columns: ['Title', 'Director', 'Producer'],
   server: {
