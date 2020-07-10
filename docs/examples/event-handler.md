@@ -15,7 +15,7 @@ import { LiveExample } from "../../lib/liveExample.js";
 Grid.js has a global EventEmitter object which is used to emit events throughout the application lifecycle.
 Simply, use the `on` method to capture and bind a function to events.
 
-Open your developer tools console to see the logs:
+Open your **developer tools console** to see the logs:
 
 <LiveExample children={
 `
