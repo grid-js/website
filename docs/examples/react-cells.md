@@ -11,69 +11,42 @@ keywords:
  - react component
 ---
 
-import ReactDOM from 'react-dom';
 import { LiveExample } from "../../lib/liveExample.js";
+import { _ } from "gridjs-react";
 
 Grid.js uses Preact to render the elements and that means that you can take advantage of Preact's Virtual DOM and render
-complex cells. In this example, we want to render React components in our cells.
+complex cells. In this example, we want to render React components in the table cells.
 
-First of all, let's import `Component` and `createRef` from Grid.js:
-```js
-import { 
-  Grid,
-  h,
-  createRef as gCreateRef,
-  Component as gComponent 
-} from "gridjs";
+First of all, make sure you have the React wrapper library, [`gridjs-react`](https://github.com/grid-js/gridjs-react), installed:
+
+```bash
+npm install gridjs-react --save
 ```
 
-:::info
-`gComponent` and `gCreateRef` are both coming from Grid.js package. 
-I have renamed them in this example to avoid naming conflicts with React. 
-:::
-
-Next, we can create a component named `ReactComponent`, that takes one input (our React component) mounts it to our table:
+Then, import the `_` function from `gridjs-react` package:
 
 ```js
-class ReactComponent extends gComponent {
-  ref = gCreateRef(null);
-  
-  componentDidMount() {
-    ReactDOM.render(this.props.element, this.ref.current);
-  }
-  
-  render() {
-    return h('div', { ref: this.ref });
-  }
-}
+import { _ } from "gridjs-react";
 ```
-
-Here is the finalized example:
+ 
+And use it in your table header or body cells. Here is the finalized example:
 
 <LiveExample children={
 `
-class ReactComponent extends gComponent {
-  ref = gCreateRef(null);
-  
-  componentDidMount() {
-    ReactDOM.render(this.props.element, this.ref.current)
-  }
-  
-  render() {
-    return h('div', { ref: this.ref });
-  }
-}
 const grid = new Grid({
   columns: [
     'Name',
-    'Email',
+    { 
+      name: 'Email',
+      formatter: (cell) => _(<i>{cell}</i>)
+    },
     'Actions'
   ],
   data: Array(5).fill().map(x => [
     faker.name.findName(),
     faker.internet.email(),
-    h(ReactComponent, { element: <b>Boom!!</b> })
+    _(<button className={"py-2 px-4 border rounded-md text-white bg-blue-600"} onClick={() => alert('clicked!')}>Edit</button>)
   ])
 });
 `
-} scope={{ ReactDOM }} />
+} scope={{ _ }} />

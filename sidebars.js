@@ -16,7 +16,9 @@ module.exports = {
       'config/className',
       'config/language',
       'config/width',
+      'config/height',
       'config/autoWidth',
+      'config/fixedHeader',
       'config/search',
       'config/sort',
       'config/pagination',
@@ -36,6 +38,7 @@ module.exports = {
         'examples/sorting',
         'examples/loading-state',
         'examples/wide-table',
+        'examples/fixed-header',
       ]
     }, {
       type: 'category',
