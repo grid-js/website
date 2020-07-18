@@ -23,6 +23,11 @@ module.exports = {
       'config/sort',
       'config/pagination',
     ],
+    "🧩 Plugin": [
+      'plugin/basics',
+      'plugin/writing-plugin',
+      'plugin/advanced-plugins',
+    ],
     "🔌 Integrations": [
       'integrations/react',
       'integrations/vue',
