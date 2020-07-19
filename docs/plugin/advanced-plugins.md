@@ -1,6 +1,6 @@
 ---
 id: advanced-plugins
-title: Advanced Plugin
+title: Advanced Plugins
 ---
 
 import { LiveExample } from "../../lib/liveExample.js";
@@ -68,7 +68,8 @@ grid.plugin.add({
 
 ## Using the translation
 
-Likewise, you can get access to the Translator object and localize strings in your custom plugin:
+Likewise, you can get access to the Translator object and localize strings in your custom plugin. `_` is a method of `BaseComponent`
+and since you've extended `BaseComponent`, you will have access to `this._` throughout your custom plugin:
 
 <LiveExample children={
 `
