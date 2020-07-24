@@ -13,12 +13,13 @@ To enable or disable the global search plugin
 
 <div className="full-width">
 
-| Name                       | Description                  |  Type   | Example             |
-|----------------------------|------------------------------|---------|---------------------|
-| enabled                    | to enable/disable the plugin | boolean | `true` or `false`   |
-| keyword `optional`         | to initiate with a keyword   | string  | `John`              |
-| server `optional`          | to enable server integration | string  | [Server-side search](./examples/server-side-search.md) |
-| debounceTimeout `optional` | search debounce timout       | number  | `1000` (1 second)   |
+| Name                       | Description                    |  Type    | Example             |
+|----------------------------|--------------------------------|----------|---------------------|
+| enabled                    | to enable/disable the plugin   | boolean  | `true` or `false`   |
+| keyword `optional`         | to initiate with a keyword     | string   | `John`              |
+| server `optional`          | to enable server integration   | object   | [Server-side search](./examples/server-side-search.md) |
+| debounceTimeout `optional` | search debounce timout         | number   | `1000` (1 second)   |
+| selector `optional`        | to customize searchable fields | function | [Search](./examples/search.md)  |
 
 </div>
 

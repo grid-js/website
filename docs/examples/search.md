@@ -30,3 +30,37 @@ const grid = new Grid({
 });
 `
 } />
+
+<br />
+
+Or you can pass an object to customize the search plugin:
+
+
+<LiveExample children={
+`
+const grid = new Grid({
+  columns: [
+   {
+     name: 'Name',
+     formatter: (cell) => cell.firstName
+   }, 
+   'Email',
+   'Phone Number'
+  ],
+  search: {
+    selector: (cell, rowIndex, cellIndex) => cellIndex === 0 ? cell.firstName : cell
+  },
+  data: [
+    [{ firstName: 'John', lastName: 'MP' }, 'john@example.com', '(353) 01 222 3333'],
+    [{ firstName: 'Mark', lastName: 'Blue' }, 'mark@gmail.com',   '(01) 22 888 4444'],
+    [{ firstName: 'Eoin', lastName: 'Kavanagh' }, 'eo3n@yahoo.com',   '(05) 10 878 5554'],
+    [{ firstName: 'Megan', lastName: 'Niesen' }, 'nis900@gmail.com',   '313 333 1923']
+  ]
+});
+`
+} />
+
+:::tip
+Using the `selector` function, you can select or customize each cell's content for the search plugin. For instance,
+if you have a nested object and you need to select a particular field to apply the search functionality to.
+:::
