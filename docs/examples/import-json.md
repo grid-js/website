@@ -71,3 +71,43 @@ const grid = new Grid({
 `
 } />
 
+<br />
+
+`id` field accepts a function as well. If you have a complex JSON object, pass a function to `id` and try to refine and format your data:
+
+<LiveExample children={
+`
+const grid = new Grid({
+  columns: [{
+    id: (row) => row.name.first,
+    name: 'First Name'
+  }, {
+    id: (row) => row.name.last,
+    name: 'Last Name'
+  }, {
+    id: 'email',
+    name: 'Email'
+  }, {
+    id: 'phoneNumber',
+    name: 'Phone Number'
+  }],
+  data: [{
+      name: {
+        first: 'John',
+        last: 'Murphy'
+      },
+      email: 'john@example.com',
+      phoneNumber: '(353) 01 222 3333'
+    },
+    {
+      name: {
+        first: 'Mark',
+        last: 'Wiens'
+      },
+      email: 'mark@gmail.com',
+      phoneNumber: '(01) 22 888 4444'
+    },
+  ]
+});
+`
+} />
