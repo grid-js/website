@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Head from '@docusaurus/Head';
 import ThemeProvider from '@theme/ThemeProvider';
+import UserPreferencesProvider from '@theme/UserPreferencesProvider';
 import AnnouncementBar from '@theme/AnnouncementBar';
 import CodeBlock from '@theme/CodeBlock';
 import faker from "faker";
@@ -485,36 +486,38 @@ function Home() {
 
   return (
     <ThemeProvider isDarkTheme={false}>
-      <Head>
-        <html lang="en" />
-        <title>{siteConfig.title} - {siteConfig.tagline}</title>
-        <meta property="og:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
-        <link rel="shortcut icon" href="/img/favicon.ico" />
-        <meta name="author" content="Afshin Mehrabani" />
-        <meta name="description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
-        <meta property="og:description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
-        <meta name="keywords" content="grid, gridjs, grid.js, javascript, jquery, react, table, html, npm, node, angular, vue, typescript" />
-        <meta property="og:image" content="https://gridjs.io/img/social.png" />
-        <meta property="og:url" content="https://gridjs.io/" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:image" content="https://gridjs.io/img/social.png" />
-        <meta name="twitter:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
-        <meta name="twitter:image:alt" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
-        <meta name="twitter:description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@grid_js" />
-        <meta name="twitter:creator" content="@afshinmeh" />
+      <UserPreferencesProvider>
+        <Head>
+          <html lang="en" />
+          <title>{siteConfig.title} - {siteConfig.tagline}</title>
+          <meta property="og:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
+          <link rel="shortcut icon" href="/img/favicon.ico" />
+          <meta name="author" content="Afshin Mehrabani" />
+          <meta name="description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
+          <meta property="og:description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
+          <meta name="keywords" content="grid, gridjs, grid.js, javascript, jquery, react, table, html, npm, node, angular, vue, typescript" />
+          <meta property="og:image" content="https://gridjs.io/img/social.png" />
+          <meta property="og:url" content="https://gridjs.io/" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:image" content="https://gridjs.io/img/social.png" />
+          <meta name="twitter:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
+          <meta name="twitter:image:alt" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
+          <meta name="twitter:description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@grid_js" />
+          <meta name="twitter:creator" content="@afshinmeh" />
 
-      </Head>
-      <AnnouncementBar />
+        </Head>
+        <AnnouncementBar />
 
-      <Header />
+        <Header />
 
-      <Install />
+        <Install />
 
-      <Features />
+        <Features />
 
-      <Footer />
+        <Footer />
+      </UserPreferencesProvider>
     </ThemeProvider>
   );
 }

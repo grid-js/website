@@ -25,7 +25,7 @@ module.exports = {
         alt: 'Grid.js',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {
           to: 'docs/index',
           activeBasePath: 'docs/index',
