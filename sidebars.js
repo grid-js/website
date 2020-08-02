@@ -64,6 +64,7 @@ module.exports = {
         'examples/server-side-search',
         'examples/server-side-pagination',
         'examples/server-side-sort',
+        'examples/custom-http-client',
       ]
     }, {
       type: 'category',
