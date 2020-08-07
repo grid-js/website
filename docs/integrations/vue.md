@@ -34,7 +34,7 @@ npm install gridjs-vue
 In `main.js` or wherever you specify your global components:
 
 ```js
-import Grid from 'gridjs-vue'
+import { GridGlobal } from 'gridjs-vue'
 
 Vue.use(Grid)
 ```
