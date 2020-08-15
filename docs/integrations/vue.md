@@ -36,7 +36,7 @@ In `main.js` or wherever you specify your global components:
 ```js
 import { GridGlobal } from 'gridjs-vue'
 
-Vue.use(Grid)
+Vue.use(GridGlobal)
 ```
 
 ## Usage
