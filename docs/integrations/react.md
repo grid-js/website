@@ -1,6 +1,6 @@
 ---
 id: react
-title: ⚛️ React 
+title: React 
 ---
 
 Grid.js has native React wrapper which can be used to create Grid.js instance in a React app. Use [gridjs-react](https://github.com/grid-js/gridjs-react)
