@@ -16,7 +16,7 @@
     "chartist": "^0.11.4",
     "classnames": "^2.2.6",
     "emotion": "^10.0.27",
-    "faker": "^4.1.0",
+    "faker": "^5.1.0",
     "gridjs": "file:../gridjs",
     "gridjs-react": "^1.16.0",
     "react": "^16.8.4",
