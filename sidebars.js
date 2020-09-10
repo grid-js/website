@@ -31,6 +31,7 @@ module.exports = {
     "🔌 Integrations": [
       'integrations/react',
       'integrations/vue',
+      'integrations/angular',
       'integrations/jquery',
     ],
     "🎮 Examples": [{
