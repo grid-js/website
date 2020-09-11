@@ -80,6 +80,7 @@ module.exports = {
       label: 'Customizing',
       items: [
         'examples/cell-formatting',
+        'examples/cell-attributes',
         'examples/row-buttons',
         'examples/html-cells',
         'examples/html-header-cells',
