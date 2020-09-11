@@ -39,6 +39,9 @@ module.exports = {
           position: 'left'
         },
         {
+          to: 'docs/sponsors', label: 'Support Grid.js', position: 'left'
+        },
+        {
           to: 'docs/community', label: 'Community', position: 'left'
         },
         {
