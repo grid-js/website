@@ -92,7 +92,7 @@ Finally don't forget to add gridjs theme in your index.html
 
 - You can pass all Grid.js events as outputs with a little difference `load` event renamed to `beforeLoad`. See [Grid.js Events](https://gridjs.io/docs/examples/event-handler)
 
-### Can I Grid.js rendering helpers? Yes
+## Can I use Grid.js rendering helpers? Yes
 
 - Using `h` function is working fine. See this example plugin.
 
@@ -115,4 +115,4 @@ Finally don't forget to add gridjs theme in your index.html
   }
 ```
 
-### Can I use Angular components in plugins, formatters, etc? Not yet
+## Can I use Angular components in plugins, formatters, etc? Not yet
