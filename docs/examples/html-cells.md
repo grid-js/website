@@ -12,11 +12,13 @@ keywords:
 
 import { LiveExample } from "../../lib/liveExample.js";
 
-Import the `html` function first:
+If you are using the ES module, import the `html` function first:
 
 ```js
 import { Grid, html } from "gridjs";
 ```
+
+or use `gridjs.html(...)` if you are using the UMD export.
 
 Then you can use that in `formatter` function or directly in `data` array:
 
