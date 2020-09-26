@@ -29,8 +29,9 @@ const grid = new Grid({
 `
 } />
 
-You can also change the default settings of the pagination plugin:
+<br/>
 
+You can also change the default settings of the pagination plugin:
 
 <LiveExample children={
 `

@@ -79,10 +79,10 @@ const grid = new Grid({
 `
 const grid = new Grid({
   columns: [{
-    id: (row) => row.name.first,
+    selector: (row) => row.name.first,
     name: 'First Name'
   }, {
-    id: (row) => row.name.last,
+    selector: (row) => row.name.last,
     name: 'Last Name'
   }, {
     id: 'email',

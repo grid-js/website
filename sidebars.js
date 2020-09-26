@@ -92,6 +92,7 @@ module.exports = {
       type: 'category',
       label: 'Advanced',
       items: [
+        'examples/nested-header',
         'examples/force-render',
         'examples/virtual-dom',
         'examples/multi-sort',
