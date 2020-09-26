@@ -5,9 +5,9 @@ title: Install
 
 Grid.js comes in two formats, **UMD** and **ES module** and also in **production** and **development**:
 
- - gridjs.development.es5.js
+ - gridjs.development.es.js
  - gridjs.development.js
- - gridjs.production.es5.min.js
+ - gridjs.production.es.min.js
  - gridjs.production.min.js
  - theme/
 
@@ -48,6 +48,17 @@ Add both JavaScript and css files:
 
 ```html title="theme/mermaid.min.css"
 <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+```
+
+You can also import the Grid.js ES module directly in the browser:
+
+```html
+<script type="module">
+  import {
+    Grid,
+    html
+  } from "https://unpkg.com/gridjs/dist/gridjs.production.es.min.js";
+</script>
 ```
 
 ### jsdelivr
