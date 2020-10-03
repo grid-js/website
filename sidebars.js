@@ -46,6 +46,7 @@ module.exports = {
         'examples/loading-state',
         'examples/wide-table',
         'examples/fixed-header',
+        'examples/hidden-columns',
       ]
     }, {
       type: 'category',

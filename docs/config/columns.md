@@ -41,6 +41,7 @@ new Grid({
 | name                  | column name                | `string`                     | `Name`                                          |
 | width `optional`      | width of the column        | `string`                     | `200px` or `30%`                                |
 | sort `optional`       | to enable/disable sort     | `boolean`                    | `true` or `0`                                   |
+| hidden `optional`     | to show/hide the column    | `boolean`                    | `true` or `0`                                   |
 | formatter `optional`  | custom cell formatting     | function                     | `(cell: TCell, row: Row<TCell>, column: TColumn) => ComponentChild;` |
 | attributes `optional` | custom cell attributes     | `HTMLAttributes` or function | `(cell: TCell, row: Row<TCell>, column: TColumn) => HTMLAttributes;` |
 
