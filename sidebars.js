@@ -91,6 +91,12 @@ module.exports = {
       ]
     }, {
       type: 'category',
+      label: 'Selection',
+      items: [
+        'examples/row-selection',
+      ]
+    }, {
+      type: 'category',
       label: 'Advanced',
       items: [
         'examples/nested-header',
@@ -99,7 +105,7 @@ module.exports = {
         'examples/multi-sort',
         'examples/custom-sort',
         'examples/stock-market',
-        'examples/event-handler',
+        'examples/event-handler'
       ]
     }]
   },

@@ -48,13 +48,13 @@ const grid = new Grid({
       'Salary 2',
       { 
         name: 'Sum',
+        data: null,
         formatter: (_, row) => \`$\${(row.cells[0].data + row.cells[1].data).toLocaleString()} USD\`
       },
    ],
   data: Array(5).fill().map(x => [
     Math.round(Math.random() * 100000),
-    Math.round(Math.random() * 100000),
-    null
+    Math.round(Math.random() * 100000)
   ])
 });
 `

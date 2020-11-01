@@ -37,7 +37,7 @@ new Grid({
 | Name                  | Description                |  Type                        | Example                                         |
 |-----------------------|----------------------------|------------------------------|-------------------------------------------------|
 | id `optional`         | column ID                  | `string`                     | `phoneNumber`                                   |
-| selector `optional`   | Cell selector fo JSON data | `function`                   | `(row) => row.name.firstName`                   |
+| data `optional`       | Cell default data          | `function` or TCell          | `(row) => row.name.firstName` or `myData`       |
 | name                  | column name                | `string`                     | `Name`                                          |
 | width `optional`      | width of the column        | `string`                     | `200px` or `30%`                                |
 | sort `optional`       | to enable/disable sort     | `boolean`                    | `true` or `0`                                   |
