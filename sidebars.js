@@ -93,7 +93,9 @@ module.exports = {
       type: 'category',
       label: 'Selection',
       items: [
+        'examples/selection',
         'examples/row-selection',
+        'examples/selection-events',
       ]
     }, {
       type: 'category',

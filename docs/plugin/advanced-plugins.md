@@ -60,7 +60,7 @@ const grid = new Grid({
   
 grid.plugin.add({
   id: 'salaryplugin',
-  component: h(TotalSalaryPlugin, {}),
+  component: TotalSalaryPlugin,
   position: PluginPosition.Footer,
 });
 `
@@ -93,7 +93,7 @@ const grid = new Grid({
   
 grid.plugin.add({
   id: 'bonjour',
-  component: h(HelloPlugin, {}),
+  component: HelloPlugin,
   position: PluginPosition.Header,
 });
 `
