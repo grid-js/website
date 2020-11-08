@@ -1,5 +1,5 @@
 ---
-id: hello-world
+slug: hello-world
 title: Hello, World!
 author: Afshin Mehrabani
 author_title: Maintainer of Grid.js
