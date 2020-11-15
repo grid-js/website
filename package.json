@@ -10,18 +10,18 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.63",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.63",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.63",
+    "@docusaurus/core": "^2.0.0-alpha.66",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.66",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.66",
     "chartist": "^0.11.4",
     "classnames": "^2.2.6",
     "emotion": "^10.0.27",
     "faker": "^5.1.0",
     "gridjs": "file:../gridjs/packages/gridjs",
-    "gridjs-selection": "file:../gridjs/packages/gridjs-selection",
     "gridjs-react": "^1.16.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "gridjs-selection": "file:../gridjs/packages/gridjs-selection",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "browserslist": {
     "production": [
@@ -36,6 +36,6 @@
     ]
   },
   "devDependencies": {
-    "@types/faker": "^5.1.0"
+    "@types/faker": "^5.1.4"
   }
 }
