@@ -46,7 +46,7 @@ const grid = new Grid({
   
 grid.plugin.add({
   id: 'myplugin',
-  component: h(MyPlugin, {}),
+  component: MyPlugin,
   position: PluginPosition.Header,
 });
 `
@@ -76,7 +76,7 @@ const grid = new Grid({
   
 grid.plugin.add({
   id: 'myplugin',
-  component: h(MyPlugin, {}),
+  component: MyPlugin,
   position: PluginPosition.Header,
 });
 `

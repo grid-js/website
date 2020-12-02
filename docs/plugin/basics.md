@@ -49,7 +49,7 @@ Adding a plugin to a Grid.js instance is as easy as calling `gridjs_instance.plu
 ```js
 grid.plugin.add({
   id: 'myplugin',
-  component: h(MyPlugin, {}),
+  component: MyPlugin,
   position: PluginPosition.Header,
 });
 ```
@@ -64,14 +64,14 @@ You can pass an optional `order` property to `plugin.add()` to define the orderi
 ```js
 grid.plugin.add({
   id: 'myfirstplugin',
-  component: h(MyPlugin, {}),
+  component: MyPlugin,
   position: PluginPosition.Header,
   order: 1,
 });
 
 grid.plugin.add({
   id: 'mysecondplugin',
-  component: h(MyPlugin, {}),
+  component: MyPlugin,
   position: PluginPosition.Header,
   order: 2,
 });
