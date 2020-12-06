@@ -359,8 +359,13 @@ function Footer() {
                     </a>
                   </li>
                   <li className="mt-4">
-                    <a href="https://github.com/grid-js/gridjs" className="text-base leading-6 text-gray-300 hover:text-white">
+                    <a href="https://github.com/grid-js/gridjs" className="text-base leading-6 text-gray-300 hover:text-white" target="_blank">
                       GitHub
+                    </a>
+                  </li>
+                  <li className="mt-4">
+                    <a href="https://introjs.com" title="Intro.js is a lightweight library for creating step-by-step customer onboarding" className="text-base leading-6 text-gray-300 hover:text-white" target="_blank">
+                      Intro.js
                     </a>
                   </li>
                 </ul>
