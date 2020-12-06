@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: https://gridjs.io/sitemap.xml
+
