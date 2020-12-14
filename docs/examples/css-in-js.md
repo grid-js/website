@@ -12,7 +12,7 @@ keywords:
 ---
 
 import { LiveExample } from "../../lib/liveExample.js";
-import { css } from 'emotion';
+import { css } from '@emotion/css';
 
 You can use any CSS-in-JS frameworks with Grid.js. In this example, we are using [Emotion](https://emotion.sh/) to style
 our Grid.js instance.
@@ -24,7 +24,7 @@ our Grid.js instance.
 Import your favorite CSS-in-JS tool first:
 
 ```js
-import { css } from 'emotion';
+import { css } from '@emotion/css';
 ```
 
 And then use the `className` config to connect them together:
