@@ -23,8 +23,8 @@ const features = [
     </>,
     description: (
       <>
-        The simplicity of Grid.js API will help you to develop an advanced
-        HTML table in a few simple and straightforward steps.
+        The simplicity of Grid.js API will help you to develop advanced
+        JavaScript tables in a few simple and straightforward steps.
       </>
     ),
   },
@@ -241,7 +241,7 @@ function Header() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Grid.js is a Free and open-source HTML table plugin written in TypeScript. It works with most JavaScript
+                Grid.js is a Free and open-source JavaScript table plugin. It works with most JavaScript
                 frameworks, including <b>React</b>, <b>Angular</b>, <b>Vue</b> and <b>VanillaJs</b>.
               </p>
 
@@ -502,16 +502,16 @@ function Home() {
           <meta property="og:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
           <link rel="shortcut icon" href="/img/favicon.ico" />
           <meta name="author" content="Afshin Mehrabani" />
-          <meta name="description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
-          <meta property="og:description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
-          <meta name="keywords" content="grid, gridjs, grid.js, javascript, jquery, react, table, html, npm, node, angular, vue, typescript" />
+          <meta name="description" content="Grid.js is a lightweight JavaScript table plugin that works on all web browsers and devices. Grid.js is open-source and it helps you create advanced tables in seconds!" />
+          <meta property="og:description" content="Grid.js is a lightweight JavaScript table plugin that works on all web browsers and devices. Grid.js is open-source and it helps you create advanced tables in seconds!" />
+          <meta name="keywords" content="grid, gridjs, grid.js, javascript, javascript table, js table, js grid, jquery, react, table, html, npm, node, angular, vue, typescript" />
           <meta property="og:image" content="https://gridjs.io/img/social.png" />
           <meta property="og:url" content="https://gridjs.io/" />
           <meta property="og:type" content="website" />
           <meta name="twitter:image" content="https://gridjs.io/img/social.png" />
           <meta name="twitter:title" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
           <meta name="twitter:image:alt" content={`${siteConfig.title} - ${siteConfig.tagline}`} />
-          <meta name="twitter:description" content="Grid.js is a lightweight, advanced JavaScript table plugin that works everywhere" />
+          <meta name="twitter:description" content="Grid.js is a lightweight JavaScript table plugin that works on all web browsers and devices. Grid.js is open-source and it helps you create advanced tables in seconds!" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@grid_js" />
           <meta name="twitter:creator" content="@afshinmeh" />
