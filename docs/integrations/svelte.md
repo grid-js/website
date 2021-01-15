@@ -3,13 +3,15 @@ id: svelte
 title: Svelte
 ---
 
-A Svelte wrapper component for [Grid.js](https://gridjs.io)
+A [Svelte wrapper](https://github.com/iamyuu/gridjs-svelte) component for Grid.js.
 
 ## Installation
 
 ``` bash
 npm install gridjs gridjs-svelte
 ```
+
+[GitHub](https://github.com/iamyuu/gridjs-svelte)
 
 ## Usage
 
