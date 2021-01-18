@@ -18,7 +18,7 @@
     "classnames": "^2.2.6",
     "faker": "^5.1.0",
     "gridjs": "file:../gridjs/packages/gridjs",
-    "gridjs-react": "^3.2.1",
+    "gridjs-react": "^3.2.2",
     "gridjs-selection": "file:../gridjs/packages/gridjs-selection",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
