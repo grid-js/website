@@ -21,6 +21,7 @@ is correctly defined in the main `server` config block:
 const grid = new Grid({
   columns: ['Pokemon', 'URL'],
   pagination: {
+    enabled: true,
     limit: 5,
     server: {
       url: (prev, page, limit) => \`\${prev}?limit=\${limit}&offset=\${page * limit}\`
