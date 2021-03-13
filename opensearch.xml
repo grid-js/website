@@ -7,5 +7,5 @@
   <Image width="16" height="16" type="image/x-icon">https://gridjs.io/img/favicon.ico</Image>
   <Url type="text/html" method="get" template="https://gridjs.io/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://gridjs.io/opensearch.xml" />
-  <moz:SearchForm>https://gridjs.io</moz:SearchForm>
+  <moz:SearchForm>https://gridjs.io/</moz:SearchForm>
 </OpenSearchDescription>
