@@ -32,6 +32,7 @@ module.exports = {
       'integrations/react',
       'integrations/vue',
       'integrations/angular',
+      'integrations/laravel',
       'integrations/svelte',
       'integrations/jquery',
     ],
