@@ -28,6 +28,19 @@ new Grid({
 
 <br/>
 
+You can also import language files to use translations provided by the module.
+
+```js
+import { Grid, html, frFR } from "gridjs";
+
+new Grid({
+  // ...
+  language: frFR
+});
+```
+
+<br/>
+
 :::tip
 See [en_US](https://github.com/grid-js/gridjs/blob/master/packages/gridjs/src/i18n/en_US.ts) for a full list of messages.
 :::
