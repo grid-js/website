@@ -45,6 +45,7 @@ module.exports = {
         'examples/pagination',
         'examples/search',
         'examples/sorting',
+        'examples/resizable',
         'examples/loading-state',
         'examples/wide-table',
         'examples/fixed-header',
