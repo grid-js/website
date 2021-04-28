@@ -10,7 +10,7 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.73",
+    "@docusaurus/core": "^2.0.0-alpha.74",
     "@docusaurus/preset-classic": "^2.0.0-alpha.73",
     "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.73",
     "@emotion/css": "^11.1.3",
