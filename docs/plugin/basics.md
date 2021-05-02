@@ -57,6 +57,22 @@ grid.plugin.add({
 Note that `position` and `id` are mandatory fields and `component` is the actual plugin class or function that we want to render.
 You can render the same plugin multiple times by calling the `plugin.add()` function and passing an unqiue ID.
 
+## Adding a Plugin using React Wrapper
+Just use ```plugins``` property to add all plugin that you want.
+```js
+<Grid
+  ...
+  plugins={[{
+    id: 'myplugin',
+    component: MyPlugin,
+    position: PluginPosition.Header,
+    order: 1
+  }]}
+
+/>
+```
+
+
 ## Ordering of plugins
 
 You can pass an optional `order` property to `plugin.add()` to define the ordering of your components:
