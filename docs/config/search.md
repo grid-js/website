@@ -20,7 +20,7 @@ To enable or disable the global search plugin
 | server `optional`          | to enable server integration   | object   | [Server-side search](./examples/server-side-search.md) |
 | debounceTimeout `optional` | search debounce timout         | number   | `1000` (1 second)   |
 | selector `optional`        | to customize searchable fields | function | [Search](./examples/search.md)  |
-| ignoreHiddenColumns `optional` | to enable/disable the search inside hidden columns (default true)   | boolean  | `true` or `false`   |
+| ignoreHiddenColumns `optional` | to enable/disable search inside hidden columns (default true)   | boolean  | `true` or `false`   |
 
 </div>
 
