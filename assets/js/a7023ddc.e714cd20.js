@@ -1,0 +1,1 @@
+(self.webpackChunkgridjs_website=self.webpackChunkgridjs_website||[]).push([[1713],{87485:function(n){"use strict";n.exports=JSON.parse('{"announcements":{"allTagsPath":"/blog/tags","slug":"announcements","name":"announcements","count":2,"permalink":"/blog/tags/announcements"}}')}}]);

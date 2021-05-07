@@ -1,0 +1,1 @@
+(self.webpackChunkgridjs_website=self.webpackChunkgridjs_website||[]).push([[8357],{98232:function(e,t,s){"use strict";s.r(t);var n=s(67294),i=s(5977);t.default=function(){return n.createElement(i.l_,{to:"/docs/index"})}}}]);
