@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   title: 'Grid.js',
-  tagline: 'Advanced table plugin',
+  tagline: 'Advanced JavaScript table plugin',
   url: 'https://gridjs.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -114,7 +114,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         sitemap: {
-          cacheTime: 600 * 1000,
           changefreq: 'weekly',
           priority: 0.5,
         },

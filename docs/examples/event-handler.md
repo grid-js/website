@@ -39,5 +39,7 @@ grid.on('cellClick', (...args) => console.log('cell: ' + JSON.stringify(args), a
 <br/>
 
 :::tip
-See a full list of Grid.js events on [event.ts](https://github.com/grid-js/gridjs/blob/master/src/events.ts).
+See a full list of Grid.js global events on [event.ts](https://github.com/grid-js/gridjs/blob/master/packages/gridjs/src/view/events.ts) and
+table events on [eventTable](https://github.com/grid-js/gridjs/blob/master/packages/gridjs/src/view/table/events.ts)
+
 :::

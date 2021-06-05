@@ -14,7 +14,7 @@ keywords:
 
 import { LiveExample } from "../../lib/liveExample.js";
 
-Add custom attributes to each cell of your table using the `attributes` config. This example
+Add custom attributes to each cell (and header cell) of your table using the `attributes` config. This example
 adds `data-field="name"` to all cells of the "Name" column:
 
 <LiveExample children={
@@ -37,7 +37,9 @@ const grid = new Grid({
 `
 } />
 
-:::info
+<br/>
+
+:::tip
 `attributes` config accepts callback function as well:
 
 ```js
@@ -45,6 +47,13 @@ const grid = new Grid({
     'attributes': (cell, row, column) => { ... }
 }
 ```
+
+**Note:** `cell` and `row` arguments are empty when the `attributes` function is called for a `th` (header cell)
+:::
+
+:::warning
+Be careful when you're using the `attributes` config. The output of `attributes` function can override the default
+Grid.js HTML attributes (e.g. you can override the default Grid.js className attribute)
 :::
 
 <LiveExample children={
@@ -54,11 +63,14 @@ const grid = new Grid({
       { 
         name: 'Name',
         attributes: (cell) => {
-          return {
-            'data-cell-content': cell,
-            'onclick': () => alert(cell),
-            'style': 'cursor: pointer'
-          };
+          // add these attributes to the td elements only
+          if (cell) { 
+            return {
+              'data-cell-content': cell,
+              'onclick': () => alert(cell),
+              'style': 'cursor: pointer',
+            };
+          }
         }
       },
       'Email',

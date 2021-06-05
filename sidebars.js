@@ -32,6 +32,8 @@ module.exports = {
       'integrations/react',
       'integrations/vue',
       'integrations/angular',
+      'integrations/laravel',
+      'integrations/svelte',
       'integrations/jquery',
     ],
     "🎮 Examples": [{
@@ -43,6 +45,7 @@ module.exports = {
         'examples/pagination',
         'examples/search',
         'examples/sorting',
+        'examples/resizable',
         'examples/loading-state',
         'examples/wide-table',
         'examples/fixed-header',

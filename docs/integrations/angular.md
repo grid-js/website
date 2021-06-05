@@ -28,12 +28,12 @@ In your component template
 
 ```ts
 import { Component } from "@angular/core";
-import { GridJsConfig } from "gridjs-angular";
+import { UserConfig } from "gridjs";
 
 @Component({
   template: `
     <gridjs-angular
-      [gridConfig]="gridConfig"
+      [config]="gridConfig"
       (cellClick)="handleCellClick($event)"
       (rowClick)="handleRowClick($event)"
       (beforeLoad)="handleBeforeLoad($event)"
@@ -42,7 +42,7 @@ import { GridJsConfig } from "gridjs-angular";
   `,
 })
 class ExampleComponent {
-  public gridConfig: GridJsConfig = {
+  public gridConfig: UserConfig = {
     columns: ["Name", "Email", "Phone Number"],
     data: [
       ["John", "john@example.com", "(353) 01 222 3333"],
@@ -84,7 +84,7 @@ Finally don't forget to add gridjs theme in your index.html
 
 - You can pass all Grid.js configs to the `<gridjs-angular>` component as inputs. See [Grid.js Config](https://gridjs.io/docs/config) for more details.
 
-- `gridConfig` You can pass Grid.js config as one object and it will be merged with other Grid.js inputs.
+- `config` You can pass Grid.js config as one object and it will be merged with other Grid.js inputs.
 
 - `plugins` Grid.js plugins array. See [Grid.js Plugins](https://gridjs.io/docs/plugin/basics)
 
