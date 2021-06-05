@@ -15,7 +15,7 @@ keywords:
 ---
 
 import { LiveExample } from "../../lib/liveExample.js";
-import { RowSelection } from "gridjs-selection";
+import { RowSelection } from "gridjs/plugins/selection";
 
 You can also subscribe to the `RowSelection` store and receive updates as soon as a row is checked or unchecked:
 

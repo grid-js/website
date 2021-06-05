@@ -17,27 +17,22 @@ Selection plugin enables users to select rows or cells. You can then retrieve th
 
 ## Install
 
-Install the `gridjs-selection` package using yarn/npm:
-
-```bash
-npm install gridjs-selection --save
-```
-
-or use a CDN:
-
-```html
-<script src="https://unpkg.com/gridjs-selection/dist/gridjs-selection.production.min.js"></script>
-```
-
-then import the `RowSelection` plugin:
+Import the selection plugin from `gridjs/plugins/selection`:
 
 ```js
-import { RowSelection } from "gridjs-selection";
+import { RowSelection } from "gridjs/plugins/selection";
 ```
 
-In UMD, `gridjs-selection` plugin globally exposed `gridjs.selection`, e.g:
+or use a CDN to import the UMD format:
+
+```html
+<script src="https://unpkg.com/gridjs/plugins/selection/dist/selection.umd.js"></script>
+```
+
+:::tip
+In UMD, the plugin globally exposed `gridjs.selection`, e.g:
 
 ```js
 gridjs.selection.RowSelection
 ```
-
+:::

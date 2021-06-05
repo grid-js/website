@@ -14,7 +14,7 @@ keywords:
 ---
 
 import { LiveExample } from "../../lib/liveExample.js";
-import { RowSelection } from "gridjs-selection";
+import { RowSelection } from "gridjs/plugins/selection";
 
 :::tip
 Install the `gridjs-selection` plugin if you haven't already. 

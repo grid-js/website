@@ -3,12 +3,12 @@ id: install
 title: Install
 ---
 
-Grid.js comes in two formats, **UMD** and **ES module** and also in **production** and **development**:
+Grid.js comes in multiple formats including **UMD** and **ES module**:
 
- - gridjs.development.es.js
- - gridjs.development.js
- - gridjs.production.es.min.js
- - gridjs.production.min.js
+ - gridjs.js
+ - gridjs.modern.js
+ - gridjs.umd.js
+ - gridjs.module.js
  - theme/
 
 Explore the project output on [https://unpkg.com/browse/gridjs/dist/](https://unpkg.com/browse/gridjs/dist/).
@@ -42,23 +42,23 @@ You can download Grid.js from [unpkg.com/browse/gridjs/dist](https://unpkg.com/b
 
 Add both JavaScript and css files:
 
-```html title="gridjs.production.min.js"
-<script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
+```html
+<script type="module">
+    import {
+        Grid,
+        html
+    } from "https://unpkg.com/gridjs?module";
+</script>
 ```
 
 ```html title="theme/mermaid.min.css"
 <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 ```
 
-You can also import the Grid.js ES module directly in the browser:
+You can also import the UMD format:
 
-```html
-<script type="module">
-  import {
-    Grid,
-    html
-  } from "https://unpkg.com/gridjs/dist/gridjs.production.es.min.js";
-</script>
+```html title="gridjs.umd.js"
+<script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
 ```
 
 ### jsdelivr
