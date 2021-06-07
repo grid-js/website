@@ -6,7 +6,7 @@ import AnnouncementBar from '@theme/AnnouncementBar';
 import CodeBlock from '@theme/CodeBlock';
 import faker from "faker";
 import { Grid } from "gridjs";
-import "gridjs/dist/theme/mermaid.css";
+import "gridjs/dist/theme/mermaid.min.css";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 // do NOT remove the CSS import even if unused

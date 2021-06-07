@@ -5,10 +5,6 @@ title: Hello World
 
 Now that we have installed the library, let's write a simple example.
 
-:::note
-We are currently working on developing wrappers for React, Angular and Vue
-:::
-
 ## Browser
 
 You **don't need any build tools** to use Grid.js. Simply include the JavaScript and CSS files in your project and then
@@ -26,7 +22,7 @@ call the `Grid` class to create a new instance:
   <body>
     <div id="wrapper"></div>
 
-    <script src="https://unpkg.com/gridjs/dist/gridjs.development.js"></script>
+    <script src="https://unpkg.com/gridjs?umd"></script>
     <script src="src/index.js"></script>
   </body>
 </html>

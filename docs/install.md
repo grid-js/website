@@ -10,6 +10,8 @@ Grid.js comes in multiple formats including **UMD** and **ES module**:
  - gridjs.umd.js
  - gridjs.module.js
  - theme/
+ - i18n/
+ - plugins/
 
 Explore the project output on [https://unpkg.com/browse/gridjs/dist/](https://unpkg.com/browse/gridjs/dist/).
 
@@ -65,12 +67,10 @@ You can also import the UMD format:
 
 Grid.js is available on [jsdelivr.com/package/npm/gridjs](https://www.jsdelivr.com/package/npm/gridjs).
 
-```html title="gridjs.production.min.js"
-<script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.production.min.js"></script>
+```html title="gridjs.umd.js"
+<script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
 ```
 
 ```html title="theme/mermaid.min.css"
 <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 ```
-
-Visit the [Install](./install.md) page for more details.

@@ -106,7 +106,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Usablica Limited.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Afshin Mehrabani`,
     },
   },
   presets: [
