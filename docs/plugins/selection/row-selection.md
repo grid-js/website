@@ -12,12 +12,12 @@ keywords:
  
 ---
 
-import { LiveExample } from "../../../../lib/liveExample.js";
+import { LiveExample } from "../../../lib/liveExample.js";
 import { RowSelection } from "gridjs/plugins/selection";
 
 :::tip
 Install the `gridjs-selection` plugin if you haven't already. 
-Follow the [installation manual](./examples/selection.md).
+Follow the [installation manual](./index.md).
 :::
 
 ## Example
@@ -187,5 +187,5 @@ grid.plugin.add({
 } scope={{RowSelection}} />
 
 :::tip
-Follow the [Advanced Plugin](./plugin/advanced-plugins.md) article to learn more about writing Grid.js plugins!
+Follow the [Advanced Plugin](../advanced-plugins.md) article to learn more about writing Grid.js plugins!
 :::

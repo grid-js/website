@@ -15,7 +15,7 @@ Today, we have released the third major version of Grid.js. v3-beta1 is now avai
 Grid.js supports *row selection* now. A dedicated plugin for Grid.js is available now: `gridjs-selection`. 
 This plugin is available on NPM and various CDNs.
 
-Read more about the [selection plugin here](/docs/examples/selection).
+Read more about the [selection plugin here](/docs/plugins/selection/index).
 
 This is the first version of this plugin and more features such as cell selection, radio buttons, etc. will be added soon.
 In order to integrate this plugin, I have changed the internal structure of the Plugin class and PluginRenderer.

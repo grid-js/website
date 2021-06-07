@@ -28,23 +28,18 @@ module.exports = {
         type: 'category',
         label: 'Overview',
         items: [
-          'plugin/basics',
-          'plugin/writing-plugin',
-          'plugin/advanced-plugins',
+          'plugins/basics',
+          'plugins/writing-plugin',
+          'plugins/advanced-plugins',
         ]
       },
       {
         type: 'category',
-        label: 'Plugins',
-        items: [{
-          type: 'category',
-          label: 'Selection',
-          items: [
-            'examples/plugins/selection/index',
-            'examples/plugins/selection/row-selection',
-            'examples/plugins/selection/selection-events',
-          ]
-        },
+        label: 'Selection',
+        items: [
+          'plugins/selection/index',
+          'plugins/selection/row-selection',
+          'plugins/selection/selection-events',
         ]
       }
     ],
@@ -113,19 +108,6 @@ module.exports = {
         'examples/html-cells',
         'examples/html-header-cells',
         'examples/react-cells'
-      ]
-    }, {
-      type: 'category',
-      label: 'Plugins',
-      items: [{
-        type: 'category',
-        label: 'Selection',
-        items: [
-          'examples/plugins/selection/index',
-          'examples/plugins/selection/row-selection',
-          'examples/plugins/selection/selection-events',
-        ]
-      },
       ]
     }, {
       type: 'category',
