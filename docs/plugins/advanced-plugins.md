@@ -1,5 +1,4 @@
 ---
-id: advanced-plugins
 title: Advanced Plugins
 ---
 

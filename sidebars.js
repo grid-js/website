@@ -23,10 +23,30 @@ module.exports = {
       'config/sort',
       'config/pagination',
     ],
-    "🧩 Plugin": [
-      'plugin/basics',
-      'plugin/writing-plugin',
-      'plugin/advanced-plugins',
+    "🧩 Plugins": [
+      {
+        type: 'category',
+        label: 'Overview',
+        items: [
+          'plugin/basics',
+          'plugin/writing-plugin',
+          'plugin/advanced-plugins',
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Plugins',
+        items: [{
+          type: 'category',
+          label: 'Selection',
+          items: [
+            'examples/plugins/selection/index',
+            'examples/plugins/selection/row-selection',
+            'examples/plugins/selection/selection-events',
+          ]
+        },
+        ]
+      }
     ],
     "🔌 Integrations": [
       'integrations/react',

@@ -1,5 +1,4 @@
 ---
-id: writing-plugin
 title: Writing a Plugin
 ---
 
