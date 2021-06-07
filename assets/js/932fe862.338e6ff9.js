@@ -1,1 +1,0 @@
-(self.webpackChunkgridjs_website=self.webpackChunkgridjs_website||[]).push([[7241],{66353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Hello, World!","permalink":"/blog/hello-world"},{"title":"Grid.js v3","permalink":"/blog/gridjs-v3"}]}')}}]);
