@@ -451,7 +451,7 @@ function Install() {
               </span>
               <input readOnly="readOnly"
                      className="form-input flex-1 block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                     value="https://unpkg.com/gridjs" />
+                     value="https://unpkg.com/gridjs/dist/gridjs.umd.js" />
             </div>
 
             <div className="mt-3 flex rounded-md shadow-sm">

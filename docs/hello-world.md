@@ -21,7 +21,7 @@ call the `Grid` class to create a new instance:
   <body>
     <div id="wrapper"></div>
 
-    <script src="https://unpkg.com/gridjs?umd"></script>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>
