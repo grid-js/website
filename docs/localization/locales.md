@@ -34,7 +34,8 @@ import { frFR } from "gridjs/l10n";
 ```
 
 :::note
-All locales are combined into one file. There is a UMD format for web-browsers as well: `gridjs/l10n/dist/l10n.umd.js`
+All locales are combined into one file. There is a UMD format for web-browsers as well: e.g. `gridjs/l10n/dist/l10n.umd.js`: 
+https://unpkg.com/gridjs/l10n/dist/l10n.umd.js
 :::
 
 Then pass it to the `language` setting of your Grid.js:
