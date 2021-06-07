@@ -8,17 +8,17 @@
     <subtitle>Grid.js Blog</subtitle>
     <icon>https://gridjs.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Hello, World!]]></title>
-        <id>hello-world</id>
-        <link href="https://gridjs.io/blog/hello-world"/>
-        <updated>2020-12-06T13:13:00.108Z</updated>
-        <summary type="html"><![CDATA[Hello, World! We will be using this blog to publish announcements, future releases and Grid.js tutorials. Stay tuned!]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Grid.js v3]]></title>
         <id>gridjs-v3</id>
         <link href="https://gridjs.io/blog/gridjs-v3"/>
         <updated>2020-12-06T13:13:00.108Z</updated>
         <summary type="html"><![CDATA[Today, we have released the third major version of Grid.js. v3-beta1 is now available on NPM and CDNs.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, World!]]></title>
+        <id>hello-world</id>
+        <link href="https://gridjs.io/blog/hello-world"/>
+        <updated>2020-12-06T13:13:00.108Z</updated>
+        <summary type="html"><![CDATA[Hello, World! We will be using this blog to publish announcements, future releases and Grid.js tutorials. Stay tuned!]]></summary>
     </entry>
 </feed>
