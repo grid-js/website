@@ -41,5 +41,5 @@ new Grid({
 <br/>
 
 :::tip
-You can customize the search placeholder using the `language` config. See [Internationalization](./examples/i18n.md).
+You can customize the search placeholder using the `language` config. See [Locales](../localization/locales.md).
 :::

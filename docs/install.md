@@ -9,7 +9,7 @@ Grid.js comes in multiple formats including **UMD** and **ES module**:
  - gridjs.umd.js
  - gridjs.module.js
  - theme/
- - i18n/
+ - i10n/
  - plugins/
 
 Explore the project output on [https://unpkg.com/browse/gridjs/dist/](https://unpkg.com/browse/gridjs/dist/).
