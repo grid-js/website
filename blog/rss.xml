@@ -8,18 +8,18 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Grid.js v3]]></title>
-            <link>https://gridjs.io/blog/gridjs-v3</link>
-            <guid>gridjs-v3</guid>
-            <pubDate>Sun, 06 Dec 2020 13:13:00 GMT</pubDate>
-            <description><![CDATA[Today, we have released the third major version of Grid.js. v3-beta1 is now available on NPM and CDNs.]]></description>
-        </item>
-        <item>
             <title><![CDATA[Hello, World!]]></title>
             <link>https://gridjs.io/blog/hello-world</link>
             <guid>hello-world</guid>
             <pubDate>Sun, 06 Dec 2020 13:13:00 GMT</pubDate>
             <description><![CDATA[Hello, World! We will be using this blog to publish announcements, future releases and Grid.js tutorials. Stay tuned!]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Grid.js v3]]></title>
+            <link>https://gridjs.io/blog/gridjs-v3</link>
+            <guid>gridjs-v3</guid>
+            <pubDate>Sun, 06 Dec 2020 13:13:00 GMT</pubDate>
+            <description><![CDATA[Today, we have released the third major version of Grid.js. v3-beta1 is now available on NPM and CDNs.]]></description>
         </item>
     </channel>
 </rss>
