@@ -130,7 +130,7 @@ module.exports = {
             'https://github.com/grid-js/website/edit/master/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css')
         },
       },
     ],

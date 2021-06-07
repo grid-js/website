@@ -1,6 +1,5 @@
 ---
-id: selection
-title: Selection 
+title: Selection Plugin
 keywords:
  - javascript
  - table
@@ -30,9 +29,9 @@ or use a CDN to import the UMD format:
 ```
 
 :::tip
-In UMD, the plugin globally exposed `gridjs.selection`, e.g:
+In UMD, the plugin globally exposed `gridjs.plugins.selection`, e.g:
 
 ```js
-gridjs.selection.RowSelection
+gridjs.plugins.selection.RowSelection
 ```
 :::

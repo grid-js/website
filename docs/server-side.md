@@ -1,5 +1,4 @@
 ---
-id: server-side
 title: Server-side setup
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: sponsors
 title: Sponsors
 ---
 

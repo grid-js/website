@@ -1,5 +1,4 @@
 ---
-id: row-selection 
 title: Row selection
 keywords:
  - javascript
@@ -13,7 +12,7 @@ keywords:
  
 ---
 
-import { LiveExample } from "../../lib/liveExample.js";
+import { LiveExample } from "../../../../lib/liveExample.js";
 import { RowSelection } from "gridjs/plugins/selection";
 
 :::tip

@@ -1,11 +1,9 @@
 ---
-id: license
 title: License
 ---
 
 MIT License
 
-Copyright (c) Usablica Limited  
 Copyright (c) Afshin Mehrabani <afshin.meh@gmail.com>
 
 ### Permissions

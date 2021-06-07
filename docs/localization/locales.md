@@ -1,6 +1,5 @@
 ---
-id: i18n
-title: Internationalization
+title: Locales
 keywords:
  - javascript
  - table
@@ -18,15 +17,24 @@ keywords:
 
 import { LiveExample } from "../../lib/liveExample.js";
 
-Grid.js has support for multiple languages. Import your language file first:
+Grid.js has support for various different languages:
+
+ - en_US
+ - es_ES
+ - fr_FR
+ - it_IT
+ - tr_TR
+
+## Installing a Locale
+
+Import your language file first:
 
 ```js
-import { frFR } from "gridjs/dist/gridjs.lang.es";
+import { frFR } from "gridjs/l10n";
 ```
 
 :::note
-"es" in `gridjs/dist/gridjs.lang.es` refers to the file format (ECMAScript). All language files are combined into one file.
-There is a UMD format for web-browsers as well: `gridjs/dist/gridjs.lang`
+All locales are combined into one file. There is a UMD format for web-browsers as well: `gridjs/l10n/dist/l10n.umd.js`
 :::
 
 Then pass it to the `language` setting of your Grid.js:
@@ -49,10 +57,6 @@ const grid = new Grid({
 });
 `
 } />
-
-:::tip
-You can find a list of supported languages here https://github.com/grid-js/gridjs/tree/master/packages/gridjs/src/i18n
-:::
 
 Also, you can easily customize Grid.js messages and add your language. Simply extend the `language` config to replace the strings:
 
@@ -87,8 +91,8 @@ const grid = new Grid({
 
 <br/>
 
-:::tip
-See [en_US](https://github.com/grid-js/gridjs/blob/master/packages/gridjs/src/i18n/en_US.ts) for a full list of messages.
-:::
+## Creating a Locale
+
+Copy the [en_US](https://github.com/grid-js/gridjs/blob/master/src/i18n/en_US.ts) file, update the values and send a PR!
 
 

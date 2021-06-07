@@ -36,6 +36,9 @@ module.exports = {
       'integrations/svelte',
       'integrations/jquery',
     ],
+    "🌎 Localization": [
+      'localization/locales',
+    ],
     "🎮 Examples": [{
       type: 'category',
       label: 'Basic',
@@ -89,16 +92,20 @@ module.exports = {
         'examples/row-buttons',
         'examples/html-cells',
         'examples/html-header-cells',
-        'examples/react-cells',
-        'examples/i18n',
+        'examples/react-cells'
       ]
     }, {
       type: 'category',
-      label: 'Selection',
-      items: [
-        'examples/selection',
-        'examples/row-selection',
-        'examples/selection-events',
+      label: 'Plugins',
+      items: [{
+        type: 'category',
+        label: 'Selection',
+        items: [
+          'examples/plugins/selection/index',
+          'examples/plugins/selection/row-selection',
+          'examples/plugins/selection/selection-events',
+        ]
+      },
       ]
     }, {
       type: 'category',

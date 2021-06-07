@@ -1,5 +1,4 @@
 ---
-id: philosophy
 title: Philosophy
 ---
 
