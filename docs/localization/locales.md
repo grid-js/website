@@ -24,6 +24,7 @@ Grid.js has support for various different languages:
  - fr_FR
  - it_IT
  - tr_TR
+ - id_ID
 
 ## Installing a Locale
 
