@@ -21,7 +21,7 @@ const grid = new Grid({
   columns: ['Name', 'Language', 'Released At', 'Artist'],
   server: {
     url: 'https://api.scryfall.com/cards/search?q=Inspiring',
-    then: data => data.map(card => [card.name, card.lang, card.released_at, card.artist])
+    then: response => response.data.map(card => [card.name, card.lang, card.released_at, card.artist])
   } 
 });
 `
