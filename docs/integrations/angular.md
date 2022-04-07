@@ -14,10 +14,10 @@ npm install gridjs gridjs-angular
 In your module
 
 ```ts
-import { GridjsAngularModule } from 'gridjs-angular';
+import { GridJsAngularModule } from 'gridjs-angular';
 
 @NgModule({
-  imports: [CommonModule,GridjsAngularModule],
+  imports: [CommonModule,GridJsAngularModule],
   declarations: [...],
   exports: [...],
 })
