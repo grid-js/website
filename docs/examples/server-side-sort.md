@@ -40,7 +40,7 @@ const grid = new Grid({
      name: 'Image',
      width: '50px',
      sort: false,
-     formatter: (img) => html(\`<center><img src='\${img}'/></center>\`)
+     formatter: (img) => grid.html(\`<center><img src='\${img}'/></center>\`)
    }
   ],
   server: {
