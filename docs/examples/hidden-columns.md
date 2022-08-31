@@ -39,5 +39,12 @@ const grid = new Grid({
 <br/>
 
 :::note
-Enabling the `hidden` flag only affects the rendering process of your Grid.js instance. Hidden columns are still searchable. 
+Hidden columns will be ignored by the [search plugin](./search.md) unless `ignoreHiddenColumns` is set to `false`.
+ 
+```
+  search: {
+    ignoreHiddenColumns: false,
+  },
+``` 
+
 :::
