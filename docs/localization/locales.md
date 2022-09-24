@@ -19,11 +19,24 @@ import { LiveExample } from "../../lib/liveExample.js";
 
 Grid.js has support for various different languages:
 
+ - ar_SA
+ - cn_CN
+ - de_De
  - en_US
  - es_ES
+ - fa_IR
  - fr_FR
+ - id_ID
  - it_IT
  - tr_TR
+ - ja_JP
+ - ko_KR
+ - nb_NO
+ - pt_BR
+ - pt_PT
+ - ru_RU
+ - tr_TR
+ - ua_UA
 
 ## Installing a Locale
 
