@@ -82,7 +82,7 @@ function helloWorld () {
   
   useEffect(() => {
     grid.render(wrapperRef.current);
-  });
+  }, []);
   
   return <div ref={wrapperRef} />;
 }
