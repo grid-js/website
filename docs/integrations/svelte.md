@@ -27,7 +27,7 @@ npm install gridjs gridjs-svelte
   ]
 </script>
 
-<Grid {data} />
+<Grid data={data} />
 
 <style global>
   @import "https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css";
