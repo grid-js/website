@@ -1,8 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Head from '@docusaurus/Head';
-import ThemeProvider from '@theme/ThemeProvider';
-import UserPreferencesProvider from '@theme/UserPreferencesProvider';
 import AnnouncementBar from '@theme/AnnouncementBar';
+import LayoutProvider from '@theme/Layout/Provider';
 import CodeBlock from '@theme/CodeBlock';
 import faker from "faker";
 import { Grid } from "gridjs";
@@ -494,8 +493,8 @@ function Home() {
   });
 
   return (
-    <ThemeProvider isDarkTheme={false}>
-      <UserPreferencesProvider>
+    <>
+      <LayoutProvider>
         <Head>
           <html lang="en" />
           <title>{siteConfig.title} - {siteConfig.tagline}</title>
@@ -526,8 +525,8 @@ function Home() {
         <Features />
 
         <Footer />
-      </UserPreferencesProvider>
-    </ThemeProvider>
+      </LayoutProvider>
+    </>
   );
 }
 

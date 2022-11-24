@@ -11,12 +11,10 @@ module.exports = {
   themeConfig: {
     image: '/img/social.png',
     algolia: {
-    apiKey: '15086b8795378f5116d77008d1c3ebf0',
-    indexName: 'gridjs',
-    algoliaOptions: {} // Optional, if provided by Algolia
-    },
-    googleAnalytics: {
-      trackingID: 'UA-167499954-1',
+      appId: 'FIXME',
+      apiKey: '15086b8795378f5116d77008d1c3ebf0',
+      indexName: 'gridjs',
+      algoliaOptions: {} // Optional, if provided by Algolia
     },
     navbar: {
       hideOnScroll: true,
@@ -131,6 +129,9 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
+        },
+        googleAnalytics: {
+          trackingID: 'UA-167499954-1',
         },
       },
     ],
