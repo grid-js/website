@@ -69,7 +69,7 @@ new Grid({
 
 | Name                    | Description                         |  Type              |
 |-------------------------|-------------------------------------|--------------------|
-| enabled                 | to enable/disable pagination        | boolean            |
+| enabled                 | to enable/disable sorting           | boolean            |
 | compare `optional`      | custom comparator function          | `Comparator<TCell>`|
 
 </div>
