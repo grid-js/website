@@ -15,7 +15,7 @@ import CodeBlock from "@theme/CodeBlock"
 import { useEffect, useRef } from "react";
 
 
-Using `updateConfig()` and `forceUpdate()` function, you can update the config of an existing instance and re-render the
+Using `updateConfig()` and `forceRender()` functions, you can update the config of an existing instance and re-render the
 container.
 
 In this example, we render a Grid.js instance, and then we attempt to update the config object and re-render it after 2 seconds:
