@@ -1,5 +1,4 @@
 ---
-id: index
 title: What is Grid.js?
 ---
 
