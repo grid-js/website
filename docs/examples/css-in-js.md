@@ -72,5 +72,5 @@ const grid = new Grid({
 <br/>
 
 :::info
-See [className](./config/className.md) config for more details.
+See [className](../config/className.md) config for more details.
 :::

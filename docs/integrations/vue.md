@@ -43,7 +43,7 @@ Vue.use(GridGlobal)
 
 Pass `cols` (an array of column headers) and either `rows`, `from`, or `server` as a data source to the component. Everything else is optional.
 
-Refer to [Grid.js documentation](./config.md) for specific configuration options.
+Refer to [Grid.js documentation](../config.md) for specific configuration options.
 
 ### Basic Example
 

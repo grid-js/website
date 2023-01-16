@@ -25,6 +25,7 @@ const grid = new Grid({
     'Email',
     { 
       name: 'Phone Number',
+      formatter: (cell) => html(\`\<b>\${cell}</b>\`),
       sort: {
         compare: (a, b) => {
           const code = (x) => x.split(' ').slice(-1)[0];

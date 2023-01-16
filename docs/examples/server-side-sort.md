@@ -38,7 +38,7 @@ const grid = new Grid({
    'Rarity',
    {
      name: 'Image',
-     width: '50px',
+     width: '30%',
      sort: false,
      formatter: (img) => html(\`<center><img src='\${img}'/></center>\`)
    }

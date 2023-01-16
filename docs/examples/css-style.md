@@ -47,5 +47,5 @@ const grid = new Grid({
 <br/>
 
 :::info
-See [style](./config/style.md) config for more details.
+See [style](../config/style.md) config for more details.
 :::

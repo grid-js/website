@@ -6,7 +6,7 @@ title: server
 To load and import data from a remote URL. Server storage uses `fetch` API to send the call and fetch the data.
 
  - `optional` (`data`, `from` or `server` must be provided)
- - Example: [Server](./examples/server.md), [Server-side search](./examples/server-side-search.md) and [Server-side pagination](./examples/server-side-pagination.md)
+ - Example: [Server](../examples/server.md), [Server-side search](../examples/server-side-search.md) and [Server-side pagination](../examples/server-side-pagination.md)
 
 <div className="full-width">
 

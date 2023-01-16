@@ -12,7 +12,7 @@ To enable the sorting plugin. Sort has two config objects:
 
  - `optional`
  - Type: `boolean` or `GenericSortConfig`
- - Example: [Sorting](./examples/sorting.md)
+ - Example: [Sorting](../examples/sorting.md)
 
 `GenericSortConfig` type has the following properties:
 
@@ -61,7 +61,7 @@ new Grid({
 
  - `optional`
  - Type: `boolean` or `SortConfig`
- - Example: [Custom sort](./examples/custom-sort.md)
+ - Example: [Custom sort](../examples/custom-sort.md)
 
 `SortConfig` type has the following properties:
 

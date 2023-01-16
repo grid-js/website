@@ -44,7 +44,7 @@ function () {
         ]
       }).forceRender();
     }, 2000);
-  });
+  }, []);
   
   return (
     <div ref={wrapper} />

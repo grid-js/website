@@ -7,7 +7,7 @@ To localize and update the messages used in Grid.js.
 
  - `optional`
  - Type: `{ [key: string]: string | (...args) => string }`
- - Example: [Locales](./localization/locales.md)
+ - Example: [Locales](../localization/locales.md)
 
 ```js
 new Grid({

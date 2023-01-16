@@ -7,7 +7,7 @@ To enable or disable the global search plugin
 
  - `optional`
  - Type: `boolean` or `SearchConfig`
- - Example: [Search](./examples/search.md) and [Server-side search](./examples/server-side-search.md)
+ - Example: [Search](../examples/search.md) and [Server-side search](../examples/server-side-search.md)
 
 `SearchConfig` type has the following properties:
 
@@ -17,9 +17,9 @@ To enable or disable the global search plugin
 |----------------------------|--------------------------------|----------|---------------------|
 | enabled                    | to enable/disable the plugin   | boolean  | `true` or `false`   |
 | keyword `optional`         | to initiate with a keyword     | string   | `John`              |
-| server `optional`          | to enable server integration   | object   | [Server-side search](./examples/server-side-search.md) |
+| server `optional`          | to enable server integration   | object   | [Server-side search](../examples/server-side-search.md) |
 | debounceTimeout `optional` | search debounce timout         | number   | `1000` (1 second)   |
-| selector `optional`        | to customize searchable fields | function | [Search](./examples/search.md)  |
+| selector `optional`        | to customize searchable fields | function | [Search](../examples/search.md)  |
 | ignoreHiddenColumns `optional` | to avoid search inside hidden columns (default true)   | boolean  | `true` or `false`   |
 
 </div>

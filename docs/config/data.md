@@ -7,7 +7,7 @@ To define the rows and columns of the table.
 
  - `optional` (either `data`, `from` or `server` must be provided)
  - Type: `TCell[][]`, `{ [key: string]: TCell }[]` or `Function`
- - Example: [Hello World](./examples/hello-world.md), [Import JSON](./examples/import-json.md), [Async import](./examples/import-async.md) and [Dynamic import](./examples/import-function.md)
+ - Example: [Hello World](../examples/hello-world.md), [Import JSON](../examples/import-json.md), [Async import](../examples/import-async.md) and [Dynamic import](../examples/import-function.md)
 
 ```js
 new Grid({

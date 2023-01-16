@@ -39,7 +39,7 @@ import { Grid } from 'gridjs-react';
 />
 ```
 
-Then you can pass all Grid.js configs to the `Grid` component. See [Grid.js Config](./config.md) for more details.
+Then you can pass all Grid.js configs to the `Grid` component. See [Grid.js Config](../config.md) for more details.
 
 ## Example
 

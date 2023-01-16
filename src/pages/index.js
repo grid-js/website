@@ -1,8 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Head from '@docusaurus/Head';
-import ThemeProvider from '@theme/ThemeProvider';
-import UserPreferencesProvider from '@theme/UserPreferencesProvider';
 import AnnouncementBar from '@theme/AnnouncementBar';
+import LayoutProvider from '@theme/Layout/Provider';
 import CodeBlock from '@theme/CodeBlock';
 import faker from "faker";
 import { Grid } from "gridjs";
@@ -404,7 +403,7 @@ function Footer() {
             </a>
           </div>
           <p className="mt-8 text-base leading-6 text-gray-400 md:mt-0 md:order-1">
-            &copy; 2020 Usablica Limited, Inc. All rights reserved.
+            &copy; 2023 Usablica. All rights reserved.
           </p>
         </div>
       </div>
@@ -494,8 +493,8 @@ function Home() {
   });
 
   return (
-    <ThemeProvider isDarkTheme={false}>
-      <UserPreferencesProvider>
+    <>
+      <LayoutProvider>
         <Head>
           <html lang="en" />
           <title>{siteConfig.title} - {siteConfig.tagline}</title>
@@ -526,8 +525,8 @@ function Home() {
         <Features />
 
         <Footer />
-      </UserPreferencesProvider>
-    </ThemeProvider>
+      </LayoutProvider>
+    </>
   );
 }
 

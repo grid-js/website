@@ -7,7 +7,7 @@ To enable the pagination plugin
 
  - `optional`
  - Type: `boolean` or `PaginationConfig`
- - Example: [Pagination](./examples/pagination.md) and [Server-side pagination](./examples/server-side-pagination.md)
+ - Example: [Pagination](../examples/pagination.md) and [Server-side pagination](../examples/server-side-pagination.md)
 
 `PaginationConfig` type has the following properties:
 

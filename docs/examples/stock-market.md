@@ -51,7 +51,7 @@ const grid = new Grid({
     {
       name: 'Trend',
       sort: false,
-      width: '100px',
+      width: '20%',
       formatter: (cell) => {
         const ref = gCreateRef();
         const chart = h('div', { ref: ref })
