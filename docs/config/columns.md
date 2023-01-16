@@ -48,5 +48,5 @@ new Grid({
 </div>
 
 :::info
-See [Cell formatting](./examples/cell-formatting.md) example for more details.
+See [Cell formatting](../examples/cell-formatting.md) example for more details.
 :::

@@ -36,7 +36,7 @@ npm install gridjs gridjs-svelte
 
 There is also an [example server side](https://svelte.dev/repl/e772220feac54e65b132615ac4d8eb09).
 
-> You can pass all Grid.js configs, refer to [Grid.js documentation](./config.md) for specific configuration options.
+> You can pass all Grid.js configs, refer to [Grid.js documentation](../config.md) for specific configuration options.
 
 ## How to get instance?
 

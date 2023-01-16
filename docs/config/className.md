@@ -7,7 +7,7 @@ To add CSS classname to a Grid.js instance
 
  - `optional`
  - Type: `object`
- - Example: [CSS ClassName](./examples/css-classname.md) and [CSS-in-JS](./examples/css-in-js.md)
+ - Example: [CSS ClassName](../examples/css-classname.md) and [CSS-in-JS](../examples/css-in-js.md)
 
 `className` type has the following properties:
 
