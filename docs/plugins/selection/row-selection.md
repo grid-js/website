@@ -35,11 +35,6 @@ const grid = new Grid({
         plugin: {
           // install the RowSelection plugin
           component: RowSelection,
-          // RowSelection config
-          props: {
-            // use the "email" column as the row identifier
-            id: (row) => row.cell(2).data
-          }
         }
       },
       { 
@@ -79,10 +74,7 @@ const grid = new Grid({
         // select all rows by default!
         data: () => true, 
         plugin: {
-          component: RowSelection,
-          props: {
-            id: (row) => row.cell(2).data
-          }
+          component: RowSelection
         }
       },
       { 
@@ -104,85 +96,6 @@ grid.on('ready', () => {
   // read the selected rows from the plugin's store
   console.log('selected rows:', checkboxPlugin.props.store.state);
 })
-`
-} scope={{RowSelection}} />
-
-## Row selection extension
-
-Grid.js enables you to write custom plugins and extend the core functionality. In this example, we are developing a custom
-plugin which listens to the Selection plugin events and populates a list of selected rows.
-
-
-<LiveExample children={
-`
-class SelectionsList extends BaseComponent {
-  constructor(props, context) {
-    super(props, context);
-    
-    this.state = {
-      selectedRows: []
-    };
-  }
-  
-  componentDidMount() {
-     const grid = this.config.instance;
-     
-     grid.on('ready', () => {
-       // find the plugin with the give plugin ID
-       const checkboxPlugin = this.config.plugin.get('selectRow');
-       
-       // subscribe to the store events
-       checkboxPlugin.props.store.on('updated', (state) => {
-         this.setState({
-           selectedRows: state.rowIds
-         });
-       });
-    });
-  }
-  
-  render() {
-    if (!this.state.selectedRows.length) {
-      return h('b', {}, 'Select some rows...');
-    }
-    
-    return h(
-      'ul', 
-      {}, 
-      this.state.selectedRows.map((rowId) => h('li', {}, rowId))
-    );
-  }
-}
-  
-const grid = new Grid({
-  columns: [
-      {
-        id: 'selectRow',
-        name: 'Select',
-        plugin: {
-          component: RowSelection,
-          props: {
-            id: (row) => row.cell(2).data
-          }
-        }
-      },
-      { 
-        name: 'Name',
-        formatter: (cell) => \`Name: \${cell}\`
-      },
-      'Email',
-  ],
-  sort: true,
-  data: Array(5).fill().map(x => [
-    faker.name.findName(),
-    faker.internet.email(),
-  ])
-});
- 
-grid.plugin.add({
-  id: 'selectionsList',
-  component: SelectionsList,
-  position: PluginPosition.Footer,
-});
 `
 } scope={{RowSelection}} />
 

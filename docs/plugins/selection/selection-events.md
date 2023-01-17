@@ -26,10 +26,7 @@ const grid = new Grid({
         id: 'awesomeCheckbox',
         name: 'Select',
         plugin: {
-          component: RowSelection,
-          props: {
-            id: (row) => row.cell(2).data
-          }
+          component: RowSelection
         }
       },
       { 
@@ -45,14 +42,9 @@ const grid = new Grid({
   ])
 });
   
-grid.on('ready', () => {
-  // find the plugin with the give plugin ID
-  const checkboxPlugin = grid.config.plugin.get('awesomeCheckbox');
-  
-  // subscribe to the store events
-  checkboxPlugin.props.store.on('updated', function (state, prevState) {
-    console.log('checkbox updated', state, prevState);
-  });
+// subscribe to the store events
+grid.config.store.subscribe(function (state) {
+  console.log('checkbox updated', state.rowSelection);
 })
 `
 } scope={{RowSelection}} />
