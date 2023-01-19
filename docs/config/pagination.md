@@ -15,7 +15,6 @@ To enable the pagination plugin
 
 | Name                         | Description                                   |  Type         |
 |------------------------------|-----------------------------------------------|---------------|
-| enabled                      | to enable/disable pagination                  | boolean       |
 | limit `optional`             | rows per page                                 | number        |
 | page `optional`              | initial page                                  | number        |
 | summary `optional`           | to show/hide the pagination summary           | boolean       |
@@ -36,7 +35,6 @@ new Grid({
     ['Nisen', 'nis900@gmail.com',   '313 333 1923']
   ],
   pagination: {
-    enabled: true,
     limit: 2,
     summary: false
   }

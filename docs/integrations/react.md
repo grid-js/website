@@ -33,7 +33,6 @@ import { Grid } from 'gridjs-react';
   columns={['Name', 'Email']}
   search={true}
   pagination={{
-    enabled: true,
     limit: 1,
   }}
 />

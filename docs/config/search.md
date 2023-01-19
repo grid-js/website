@@ -15,7 +15,6 @@ To enable or disable the global search plugin
 
 | Name                       | Description                    |  Type    | Example             |
 |----------------------------|--------------------------------|----------|---------------------|
-| enabled                    | to enable/disable the plugin   | boolean  | `true` or `false`   |
 | keyword `optional`         | to initiate with a keyword     | string   | `John`              |
 | server `optional`          | to enable server integration   | object   | [Server-side search](../examples/server-side-search.md) |
 | debounceTimeout `optional` | search debounce timout         | number   | `1000` (1 second)   |
@@ -32,9 +31,7 @@ new Grid({
     ['Eoin', 'eo3n@yahoo.com',   '(05) 10 878 5554'],
     ['Nisen', 'nis900@gmail.com',   '313 333 1923']
   ],
-  search: {
-    enabled: true
-  }
+  search: true
 });
 ```
 

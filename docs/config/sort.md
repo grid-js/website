@@ -20,7 +20,6 @@ To enable the sorting plugin. Sort has two config objects:
 
 | Name                    | Description                         |  Type         |
 |-------------------------|-------------------------------------|---------------|
-| enabled                 | to enable/disable sorting           | boolean       |
 | multiColumn `optional`  | Enable/disable multi column sort    | boolean       |
 | server `optional`       | Server-side integration             | ServerConfig  |
 
@@ -69,7 +68,6 @@ new Grid({
 
 | Name                    | Description                         |  Type              |
 |-------------------------|-------------------------------------|--------------------|
-| enabled                 | to enable/disable sorting           | boolean            |
 | compare `optional`      | custom comparator function          | `Comparator<TCell>`|
 
 </div>
@@ -83,9 +81,7 @@ new Grid({
     'Email',
     { 
       name: 'Phone Number',
-      sort: {
-        enabled: false
-      }
+      sort: false
     }
   ],
   sort: true,

@@ -51,3 +51,7 @@ const grid = new Grid({
 });
 `
 } />
+
+:::tip
+In the example above, we are sorting the "Phone Number" column based on the _last 4 digits_!
+:::

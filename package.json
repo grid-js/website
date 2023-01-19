@@ -18,7 +18,7 @@
     "chartist": "^0.11.4",
     "classnames": "^2.3.1",
     "faker": "^5.5.3",
-    "gridjs": "^6.0.4",
+    "gridjs": "^6.0.5",
     "gridjs-react": "^6.0.1",
     "postcss-scss": "^3.0.5",
     "react": "^17.0.2",
