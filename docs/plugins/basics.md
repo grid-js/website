@@ -8,18 +8,18 @@ In this article, we talk about what is a Grid.js plugin and how to develop one.
 ## Introduction
 
 Grid.js uses [Preact](https://preactjs.com/) under the hood to render the table and other components like search, pagination, etc. 
-A Grid.js plugin is a `class` or a `function` that render a Virtual Node. This interface is very similar to a React component. 
+A Grid.js plugin is a [Preact Functional Component](https://preactjs.com/guide/v10/components/#functional-components) that render a Virtual Node. This interface is very similar to a React component. 
 
 Once you have a component that can render an element, then you can add it to the list of Grid.js plugin and Grid.js will
-take care of rendering and calling your plugin.
+take care of rendering your plugin.
 
 A [Plugin](https://github.com/grid-js/gridjs/blob/master/src/plugin.ts) has following properties:
 
 ```ts
-interface Plugin {
+interface Plugin<T extends FunctionComponent> {
   id: string;
   position: PluginPosition;
-  component: VNode<any>;
+  component: T;
   order?: number;
 }
 ```
@@ -53,11 +53,12 @@ grid.plugin.add({
 });
 ```
 
-Note that `position` and `id` are mandatory fields and `component` is the actual plugin class or function that we want to render.
+Note that `position` and `id` are mandatory fields and `component` is the actual plugin function that we want to render.
 You can render the same plugin multiple times by calling the `plugin.add()` function and passing an unqiue ID.
 
 ## Adding a Plugin using React Wrapper
-Just use ```plugins``` property to add all plugin that you want.
+Just use the ```plugins``` property to add all plugin that you want.
+
 ```js
 <Grid
   ...
@@ -70,7 +71,6 @@ Just use ```plugins``` property to add all plugin that you want.
 
 />
 ```
-
 
 ## Ordering of plugins
 
