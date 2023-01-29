@@ -52,12 +52,6 @@ const grid = new Grid({
 `
 } scope={{RowSelection}} />
 
-:::note
-In the example above, the 3rd cell (which is `row.cell(2).data`) has been selected as the row identifier which is 
-the "Email" field. Note that the first cell is the checkbox column.
-:::
-
-
 ## Selected rows
 
 The selection plugin uses a Redux architecture and that means each selection instance has its own unique Store which keeps
