@@ -104,7 +104,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Afshin Mehrabani`,
+      copyright: `Copyright © ${new Date().getFullYear()} Grid.js`,
     },
   },
   presets: [
