@@ -22,8 +22,7 @@ Follow the [installation manual](./index.md).
 
 ## Example
 
-Add a new column to your table definition and install the plugin. You need to define an `id` function for your selection
-plugin. The `id` function must return a unique `string` for each row and is called to determine the identifier for each row.
+In order to install the Selection plugin, add a new column to the `columns` list and instantiate the plugin:
 
 <LiveExample children={
 `
