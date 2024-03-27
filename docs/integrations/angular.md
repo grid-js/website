@@ -115,4 +115,107 @@ Finally don't forget to add gridjs theme in your index.html
   }
 ```
 
-## Can I use Angular components in plugins, formatters, etc? Not yet
+## Can I use Angular components in plugins, formatters, etc? Yes!
+
+```ts
+import { AfterViewInit, Component, ElementRef, Input, TemplateRef, ViewChild, ViewContainerRef, inject } from '@angular/core';
+import { bootstrapApplication } from '@angular/platform-browser';
+import 'zone.js';
+import * as gridjs from 'gridjs';
+import {TColumn} from 'gridjs/dist/src/types';
+
+export interface IData {
+  name: string;
+}
+
+@Component({standalone: true, template: `
+  {{row?.name ?? 'no name'}}
+`})
+export class MyComponent{
+  @Input()
+  row?: IData;
+}
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [],
+  template: `
+    <div #grid></div>
+    <ng-template #myTemplate let-row="rowObj" >
+      {{row.name ?? 'no name'}}
+    </ng-template>
+  `,
+})
+export class App implements AfterViewInit {
+  @ViewChild('grid') grid!: ElementRef<HTMLElement>;
+  @ViewChild('myTemplate') template!: TemplateRef<any>;
+
+  readonly host = inject(ElementRef<HTMLElement>);
+  readonly viewContainerRef = inject(ViewContainerRef);
+
+  ngAfterViewInit() {
+    const grid = new gridjs.Grid({
+      columns: [{
+        id: 'name',
+        name: 'name (gridjs binding)'
+      }, {
+        id: 'angular-component-binding',
+        name: 'name (angular component binding)',
+        formatter: (cell, row) => {
+          return this.createComponent(MyComponent, {row: this.createRowObject(row, grid)})
+      }
+      }, {
+        id: 'angular-template-binding',
+        name: 'name (angular template binding)',
+        formatter: (cell, row) => this.createTemplate(this.template, {cell, row, rowObj: this.createRowObject(row, grid)})
+      }],
+      data: [{
+        name: 'Joe'
+      }]
+    });
+    grid.render(this.grid.nativeElement);
+  }
+
+  createRowObject(row: any, grid: gridjs.Grid) {
+    return grid.config.columns.reduce((acc, col, i) => {
+      (acc as Record<string, any>)[(col as TColumn).id!] = row.cells[i].data;
+      return acc;
+    }, {} as Record<string, any>);
+  }
+
+  createTemplate(templateRef: TemplateRef<any>, context: any = {}) {
+    const ref = gridjs.createRef();
+    const div = gridjs.h('div', {ref});
+    setTimeout(() => {
+      const wrapper = ref.current as HTMLDivElement;
+      if (wrapper?.children.length === 0) {
+        const tRef = this.viewContainerRef.createEmbeddedView(templateRef, context);
+        wrapper.innerHTML = '';
+        wrapper.append(...tRef.rootNodes);
+      }
+    })
+    return div;
+  }
+
+  createComponent(componentType: any, bindInputs: Record<string, any> = {}) {
+    const ref = gridjs.createRef();
+    const div = gridjs.h('div', {ref});
+    setTimeout(() => {
+      const wrapper = ref.current as HTMLDivElement;
+      if (wrapper?.children.length === 0) {
+        const componentRef = this.viewContainerRef.createComponent(componentType);
+        Object.entries(bindInputs).forEach(e => {
+          componentRef.setInput(e[0], e[1]);
+        })
+        wrapper.appendChild(componentRef.location.nativeElement);
+      }
+    })
+    return div;
+  }
+}
+
+bootstrapApplication(App);
+```
+
+See this example on StackBlitz: <https://stackblitz.com/edit/stackblitz-starters-ng6gl4?file=src%2Fmain.ts>
